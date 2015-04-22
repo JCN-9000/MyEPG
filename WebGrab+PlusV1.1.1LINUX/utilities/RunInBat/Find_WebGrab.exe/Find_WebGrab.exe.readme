@@ -1,0 +1,14 @@
+Script for easy finding WG exe so you can use it in taskscheduler 
+
+If you want to start webgrab in taskscheduler you need the exe file wich is hidden and also changes it's path everytime  when updated. 
+
+Here's a little script that will find the WG exe for you, so you don't have to find it manual every time. 
+
+You could even run the EXE in the same script but soon there will be a much better script posted here for running WG in a batch file. So you might want to w8 for it... 
+
+Copy the code and save it into a new file named FindWG.bat 
+Run the FindWG.bat file and it will find the webgrab exe file for you. 
+
+Grtz, 
+
+John 

@@ -1,0 +1,20 @@
+﻿WebGrab+Plus/w MDB & REX Postprocess -- version 1.54.6/0.01 -- Jan van Straaten
+-------------------------------------------------------------------------------
+job started at 4/20/2015 7:16:57 PM
+
+
+reading config file: /home/avi/WG/wg++/WebGrab++.config.xml
+loading timezone data
+embedded timezones source: Webgrab_Plus.TimezonesData.txt
+found: /home/avi/WG/wg++/laguidatv.it.ini -- Revision 0
+
+timezone=UTC+01:00 mapped with timezone_id "Europe/Paris"
+
+running on Unix 3.16.0.4
+
+xmltv input file - /home/avi/WG/wg++/MyEPG.xml - found
+0 superfluous shows removed
+update requested for - 1 - out of - 1 - channels and for 1 day(s)
+update mode set per individual channel
+
+channel Focus Tv site -- LAGUIDATV.IT -- update mode incremental

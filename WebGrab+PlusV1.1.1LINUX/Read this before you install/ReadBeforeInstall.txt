@@ -1,0 +1,123 @@
+How to start with WebGrab+Plus         Jan van Straaten  August 2012,  La Laja, San Sebastian de la Gomera, Spain
+
+updated 21 July : update procedure
+updated 12 October : reflects V1.0 Beta
+updated 8 November : reflects V1.0.1 Beta
+updated 11 Dovember: reflects V1.0.2 Beta
+updated 27 December: reflects V1.0.3 and V1.0.4 Beta
+updated 1 March 2011: reflects V1.0.5 and V1.0.6 Beta
+updated 30 May 2011: reflects V1.0.7
+updated 23 September 2011: reflects V1.0.8
+updated 18 December 2011: reflects V1.0.9
+updated 8 April 2012: reflects V1.1.0
+updated 22 August 2012: reflects V1.1.1
+
+V1.1.1 Info:
+Addition of the REX postprocessor. Refer to Readme-V111.txt and the explanations in WebGrab++.config,  mdb.config and rex.config.xml for configuration and use.
+
+V1.1.0 Info:
+Introduction of the MDB postprocessor. Refer to howtocofigute.txt and the explanations in WebGrab++.config and mdb.config for configuration and use.
+
+V1.0.9 Info:
+See ChangeLog.txt for the updated issues.
+First version without the Beta status
+although this version has undergone quite a number of improvements, changes and bug fixes, for the regular user there is little change  in the use of the program.
+
+V1.0.8 Info:
+See ChangeLog.txt for the updated issues.
+This version introduces a more normal installation by means of a te Microsoft Installer Package .msi, where the executable will be placed in the regular program files folder. See updated 'to install' in the general section down below.
+Apart from that, and although this version has undergone quite a number of improvements, changes and bug fixes, for the regular user there is little change  in the use of the program.
+
+V1.0.7 Info:
+See ChangeLog.txt for the updated issues
+New entries in the config file:
+Extended Retry settings; time-out, channel-delay, index-delay and show-delay
+Possibility to disable the skip function
+New timeoffset channels in the channel list
+Altough older versions of the config file will still work, it is recommended to use the new one.
+Copy your channel list to it and adapt the other setting to your requirements.
+
+V1.0.6 Info:
+See ChangeLog.txt for the updated issues
+Adapted update guide , see further down: @ To update to a new version
+A few new entries in the config file:
+mode n, disables the update-type (like(n)) at the end of the description
+proxy , added are the option to add username and password
+user-agent , an optional string that is send to the tvguide website to identify the request 
+
+V1.0.5 Info:
+See ChangeLog.txt for the updated issues
+No change in use and installation
+
+V1.0.4 Info:
+See ChangeLog.txt for the updated issues
+No change in use and installation
+
+V1.0.3 Info:
+See ChangeLog.txt for the updated issues
+This version was a quick fix of a problem that occured with 1.0.2 wrt the proxy handler in the original GrabEngine
+No change in use and installation
+
+V1.0.2 Info:
+See ChangeLog.txt for the updated issues
+
+The config file (WebGrab++.config.xml) of Version V1.0.2 has an updated text content to reflect the new channel-list attribute -site_channel-  and the new mode w or wget to select the alternative Grabengine. To old version of it remains compatible, so if you wish you can use your old config file. I recomment however to use the new one (you can copy/past your channel-list in to it)
+
+Added a list of currently supported site's : SiteIni-List.pdf
+Added 'SiteIni Pack': the complete set of all siteini files
+
+V1.0.1 Info:
+See ChangeLog.txt for the updated issues
+
+The config file (WebGrab++.config.xml) of Version V1.0.1 has an updated text content to reflect the new channel-list attributes -period-, -exclude- and -include- . To old version of it remains compatible, so if you wish you can use your old config file. I recomment however to use the new one (you can copy/past your channel-list in to it)
+
+Added are two guidelines: Combi-Channels-Guide.txt and Merging-xmltv-files.txt. They cover the how-to of combi channels and Merging existing xmltv files into the WG++ results.
+
+SiteIni files: 
+added :  'mijn-tv-gids.be.ini' for a Belgium tvguide site.
+added :  'empty.ini' can be used when merging existing xmltv files with WG++ results.
+small change : gids.omroep.nl , the site changed it url for indexpages. The old version still works ok due to redirection.
+
+
+General info:
+
+!!! Important before installing V1.0.8 and higher!!!
+If you have an older version (V1.0.7 or before)  that was installed with the 'MS Click Once' method, it is important to uninstall that first.  (Control Panel/Programs/uninstall a program). Otherwise you will end up with both the new and this older version. Follow the guidelines under 'To update to a new version'
+
+To install (Windows):
+
+Run   Install.bat , that's all. (you will find the install.bat file in the installation home folder, among all the available siteini files)
+ 
+Important: The program needs Microsoft .net V4. If  If you interrupt this or for some other reason it cannot be completed, you have to start Install.bat again.
+
+To install (LINUX):
+
+See separate document 'HowToInLinux.txt'.
+
+
+To update to a new version:
+
+!!First check if a subfolder C:\ProgramData\ServerCare\WebGrab\old exist!! This might contain files you want to keep, like previous versions of the config or any siteini files you have custimized. Move them to a safe place.
+Uninstall the previous version (Control Panel/Programs/uninstall a program). This will uninstall the program only but leave all other files in tact in subfolder C:\ProgramData\ServerCare\WebGrab.
+Then run install.bat If you run the install batch file when a subfolder C:\ProgramData\ServerCare\WebGrab exists, it will first copy all existing resource-files (like the config and the siteini files) to the subfolder C:\ProgramData\ServerCare\WebGrab\old. It will then copy all new resource-files to C:\ProgramData\ServerCare\WebGrab\ like with a normal new installation. However, be warned, it will remove anything that is already in any 'old' folder from before the update as it will only keep the latest 'old' folder. 
+If you want to run WebGrab+Pus with an older- or your own version of the config or any siteini file, you can find them saved in this C:\ProgramData\ServerCare\WebGrab\old folder or the safe place you have moved them to.
+The resource files contained in an update are always the latest versions available, matching the program version. Realise that the older siteini files are not always compatible with the newer program versions. Check the latest 'SiteIni-List' contained in the 'SiteIni.Pack' for version information.
+
+To uninstall: 
+
+Use the normal uninstall from the  Control Panel/Programs/uninstall a program. If you don't want to keep the resource-files, delete the folder WebGrab in C:\ProgramData\ServerCare
+
+
+Configuring the program:
+
+Installing WebGrab+Plus will place all resource-files (config, ini, txt and ico) to C:\ProgramData\ServerCare\WebGrab. This is the programs home working folder. This is also the place were the xmltv outputfile (guide.xml) and the log file will be put. The place of the xmltv file can be changed to suit your needs in the configfile (C:\ProgramData\ServerCare\WebGrab\WebGrab++.config.xml)
+Directly after the installation a test run is started. It uses the configfile which comes with the distribution that will grab 1 day of epg data from all available sites in incremental mode. You can interrupt this any time without any consequence for files and settings.
+
+Adapt the config settings to suit your own needs, the file is self explanatary. The most important is to add /change the list of channels for which epg data is grabbed. Read and follow the instructions in the configfile to do that. The most important is to specify the correct <site> attribute value. For each site listed there a corresponding siteini file must be available, eg if the <site> value is laguiatv.com a siteini file laguiatv.com.ini must be available in the program working folder. Every channel can have a different <site> value, allowing to grab epg data from different sites in one run. The next important value in the channel list is the <site_id> attribute. This must be equal to the channel identification in the corresponding site. For nearly all sites a channel list file (like tvgids.nl.channels.xml) is available in the SiteIni.Pack. The most easy way to add channels to your config file is to copy the ones you want from this channel list file into the config file.
+
+If no siteini file is available for a certain site it must be created. You can either try to make one yourself with the help of the Documentation.V1_0_Beta.pdf file or contact me at <jan_van_straaten@hotmail.com>  or leave a message at the ServerCare.nl WebGrab+Plus page.
+ 
+Any comments /problems /wishes to the same address are welcome.
+
+
+good luck      Jan van Straaten

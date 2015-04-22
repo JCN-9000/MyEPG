@@ -1,0 +1,39 @@
+Manual for creating a siteini file:
+
+You will need the documentation, especially chapter 4
+
+1. start with the site-ini-template.ini Rename a copy of it e.g. myfirstsite.ini or something different
+
+2. all elements are default disabled (first char = * )
+
+3. enable the line that starts with site (only the first is enough for now), urldate, url_index, and index_start index_title (* road)
+
+4. provide best possible values in this line ' site '
+
+5. try find out the url of an index page, especially how and where the date is indicated and how and where the channel.
+
+6. determine the format of the date values in the urldate. (see examples in the documentation)
+
+7. create the scrubstring and url_index add debug. ... url_index {url (debug) | ... rest of the spec ...}
+
+8. enter one channel in the config with site = myfirstsite and update = f. Take care of the correct site_id, (= channel designation in the url_index!) Set  timespan = 0 (one day)
+
+9. run WG ++
+
+10. If nothing goes wrong and url_index is ok then the first index page is grabbed. You'll find the generated url in the logfile. With it you can check it again in your browser. Also, the html source of the page is copied to the file html.source.htm.
+
+11. if the first index_page is ok,  try with more days e.eg  timespan = 1 etc.
+
+12. you should now split the index page in program blocks. You will find those usually by locating the start time or the title on the index page of one of the programs. If you have understood the principle of scrubstring with bs, es, ee, be and the difference between single and multi then it must be possible to compose the index_showsplit. Add debug again so that you can see what happens in the log.
+
+13. If you're ready, the next step is index_start and index_title. You can use the html.source.htm of the last run to figure out the block and element separators for them (the debug in the show_split creates an html source of the last program in the index page)
+
+14. If successful, you'll have created the first xmltv file with the times and a title of all the programs in the index page.
+
+15. the following is the index_urlshow. That is the url of the show details. That url will only be called if there is at least one element without the prefix index_ enabled, so enable title.scrub (for now no values are needed)
+
+16. if the index_urlshow gets you the correct show detail html page, compose title.scrub.
+
+17. and all other elements that you want to scrub
+
+18. etc etc

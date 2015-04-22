@@ -1,0 +1,282 @@
+﻿<?xml version="1.0"?>
+<!-- Configuration file for WebGrab+Plus, the incremental Electronic-Program-Guide web grabber
+by Jan van Straaten, December 2011
+Version V1.1.1 -->
+
+<settings>
+  <!-- filename      
+The path (required) + filename where the epgguide xml file is /will be located. It must include drive and folder. Like C:\ProgramData\ServerCare\WebGrab\guide.xml
+If the file already exist (from last run or from another xmltv source) it will read it and use what fits the requested output. In that case the file will be updated. If no such file exist it will be created.
+Change the following to your own needs  :
+-->
+ <filename>C:\ProgramData\ServerCare\WebGrab\guide.xml</filename>
+  
+  <!-- modes:   
+d or debug    saves the output xmltv file in a file with -debug addition in the file name . The original xmltv file will be kept.  
+m or measure  measures the time for each updated show or new show added 
+n = nomark    disables the update-type marking (n) (c) (g) (r) at the end of the description
+v or verify   verifies the result following a channel update
+w or wget     use wget as grab engine (might improve site recognition in rare cases)
+Note that modes can be added in one line, separated by comma's or spaces, or both. 
+-->
+  <mode>m</mode>
+  
+  <!-- postprocess:
+  Optional , specifies which of the available postprocesses should run.
+  syntax: <postprocess run="" grab="">processname</postprocess>
+  
+(optional) grab="yes" or "y" or "true" or "on" : grabs epg first (default)     ; "no" or "n" or "false" or "off" : skip epg grabbing 
+(optional) run="yes" or "y" or "true" or "on" : runs the postprocess (default) ; "no" or "n" or "false" or "off" : do not run post process
+processname: the process to run : 
+processname = mdb runs a build in movie database grabber (read / adapt  ...\mdb\mdb.confif.xml
+processname = rex runs a postprocess that re-allocates xmltv elements (read / adapt  ...\rex\rex.config.xml)
+examples:
+  <postprocess run="on" grab="on">mdb</postprocess>  grabs first , then run mdb
+  <postprocess>mdb</postprocess>  same as above (uses defaults for grab and run)
+  <postprocess grab="no">rex</postprocess>  runs rex without grab (existing xmltv file)
+-->
+  <postprocess run="y" grab="y">mdb</postprocess>
+  
+  <!-- proxy:
+This setting is only required if your computer is connected to internet behind a proxy
+specify proxy address as ip:port like <proxy>192.168.2.4:8080</proxy>
+or as <proxy>automatic</proxy> which attempts to read the proxy address from your connection settings. If your proxy requires a username and password, add them like 
+<proxy user="username" password="password">192.168.2.4:8080</proxy>  
+  <proxy>192.168.2.2:8080</proxy>
+-->
+<proxy>automatic</proxy>
+
+  <!-- user agent:
+The user agent string that is sent to the tvguide website. Some sites require this. Valid values are either 
+, in which case the program generates a random string, or any other string like <user-agent>Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US)</user-agent>  <user-agent>random</user-agent><user-agent>Mozilla/5.0 (Windows; U; MSIE 9.0; WIndows NT 9.0; en-US)</user-agent><user-agent>Mozilla/5.0 (Linux; U; Android 0.5; en-us) AppleWebKit/522+ (KHTML, like Gecko) Safari/419.3</user-agent>
+-->
+<user-agent>Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; yie9)</user-agent>
+  
+  
+  <!-- logging: 
+simply put 'on' in there to start logging, anything else will turn it off 
+-->
+  <logging>on</logging>
+
+  <!--retry
+The most simple form of retry defines the amount of times the grabber engine should attempt to capture a web page before giving up and continuing with the next page, like <retry>4</retry>
+It is also the place to specify delays between retries and the grabbing of html pages with the following attributes: timeout; the delay between retries (default is 10 sec), channel-delay; the delay between subsequent channels (default is 0), index-delay; the delay between the grabbing of index pages (default is 0), show-delay; the delay between the grabbing of detail show pages (default is 0). In the most complete version it will look like this:
+<retry time-out="5" channel-delay="5" index-delay="1" show-delay="1">4</retry> show-delay="2"
+-->
+  <retry time-out="5">4</retry>
+
+  <!--skip
+It takes two values H,m  separated by a comma: 
+The first H : if a show takes more than H hours, it's either tellsell or other commercial fluff, or simply a mistake or error, we want to skip such shows.
+The second m : if a show is less or equal than m minutes it is probably an announcement , in any case not a real show. 
+When entered as <skip></skip> the defaults are 12 hours, 1 minute, same as <skip>12,1</skip>. To disable this function enter  or just leave out this entry completely<skip>14, 1</skip><skip>16,1</skip>
+-->
+  
+<skip>noskip</skip>
+  
+  <!--timespan
+The timespan for which shows will be grabbed.
+It takes one or two values separated by a comma or a space. The first is the number of days (including today) to download, note that 0 is today. The second (optional) is a time specified between 0:00 and 24:00 which will reduce the download to only the one show (per day) which is scheduled around the specified time. Any value between start time (including) and stop time will do
+This -one-show-only mode is helpfull if a SiteIni file needs to be debugged
+-->
+  <timespan>0</timespan>
+
+  <!-- update mode
+i or incremental     only updates of changes , gabs, repairs and new shows
+l or light           forces update of today and new shows, rest as incremental
+s or smart           forces update of today and tomorrow and new shows, rest as light
+f or full or force   forces full update 
+If one of these values is entered here it will apply to all channels selected for update 
+(see channel).  This value overrules the value of 'update' for in the individual channels 
+If no value is entered here the individual 'update' values from the channellist are taken 
+-->
+  <update></update>
+
+  <!-- The channel-list :
+Each channel to be grabbed has a separate entry in the list, the most common form is: 
+<channel update=.. site=.. site_id=.. xmltv_id=..  >display-name</channel> 
+Besides this form, there is a possibility to specify special channels like 'combi-channels' and 'timeoffset-channels', see further down for more information-->
+  <!-- Channel list files : 
+The easiest way to compose this channel-list is to copy the required channels from the channel-list files which can be found in the SiteIni.Pack for nearly every supported tvguide site. -->
+  <!-- update :
+The mode values here can be set for each channel differently if not overruled by the general update setting (see above). Allowed values are as the same as the general update setting. Any other value will be ignored.  If any of the allowed values of 'update' is entered, this channel will be updated , no value no update ! In that case the epg data of that channel will remain as it is.  -->
+  <!-- site:
+The website to be used to get the EPG from. The value entered here is the name of the .ini file that supplies the specific parameters for the site without .ini extension.
+e.g tvgids.nl.ini becomes site="tvgids.nl" and gids.publiekeomroep.nl.ini becomes site="gids.publiekeomroep.nl".-->
+  <!-- site_id: 
+This is the number or text used by the site as reference to the correct html page for this channel. It is used by the program to compose the url for the shows for a channel. For nearly all sites supported by the program a channel-list file is provided in the siteini-pack. It list most of the available channels including this site_id -->
+  <!-- xmltv_id :
+The xmltv_id can be any string that suits your needs, you will find it back as the "channel" in your xml file as in : 
+<programme start="20100218072500 +0200" stop="20100218075500 +0200" channel="RTL7-id"> -->
+  <!-- display-name: This will be used in the xmltv file to give the channel's displayname. That is the name the epgprogram  will use to display the channel. Give it any value you like. It is no problem if site_id , xmltv_id and display-name are equal -->
+  <!-- Important ! 
+Be aware that all channels entered here will be included in the xmltv channel table even if no update is requested. This allows the update of individual channels without affecting the data of the others in the list. A channel not in this list will be removed from your xmltv listing together with all the show data of it if found there by WebGrab+Plus. (If you use WebGrab+Plus with a xmltv input file from another source, it will remove all data from channels not in this list and create an entry for new channels)
+WebGrab+Plus uses the xmltv_id to identify a channel in an existing xmltv file.
+-->    
+  <!--Australia-->
+  <!--yourtv.com, needs cookie file yourtv.cookie.txt, see loadcookie.txt !!-->
+  <channel update="" site="yourtv.com.au" site_id="MOVIE EXTRA" xmltv_id="MOVIE EXTRA">MOVIE EXTRA</channel>
+  <!--Austria-->
+  <channel update="" site="tv-guide.upc.at" site_id="gy" xmltv_id="ORF eins">ORF eins</channel>
+  <!--Belgium-->
+  <channel update="" site="yelo.be" site_id="vlaams" site_channel="vtm" xmltv_id="VTM">VTM</channel>
+  <channel update="" site="mijn-tv-gids.be" site_id="467/programme-television-2BE" xmltv_id="2BE">2BE</channel>
+  <channel update="" site="mon-programme-tv.be" site_id="24/programme-television-RTBF-1" xmltv_id="RTBF 1">RTBF 1</channel>
+  <channel update="" site="moustique.be" site_id="ketnet" xmltv_id="Ketnet">Ketnet</channel>
+  <channel update="" site="humo.be" site_id="een" xmltv_id="één">één</channel>
+  <channel update="" site="zita.be" site_id="vtm" xmltv_id="VTM-zeta">VTM-zeta</channel>
+  <channel update="" site="mobistartv.be" site_id="VT4" xmltv_id="VT4.be">VT4</channel>
+  <!--Bosnia-->
+  <channel update="" site="m.tvprofil.net" site_id="htv1" xmltv_id="HTV1-tvprofil">HTV1</channel>
+  <!--Brasil-->
+  <channel update="" site="hagah.com.br.net" site_id="MAX" xmltv_id="Cinemax">Cinemax</channel>
+  <channel update="" site="tvmagazine.com.br" site_id="GBB" xmltv_id="TV Bahia">TV Bahia</channel>
+  <channel update="" site="sky.com.br" site_id="479" xmltv_id="TV TEM - SÃO JOSÉ DO RIO PRETO">TV TEM - SÃO JOSÉ DO RIO PRETO</channel>
+  <!--Croatia-->
+  <channel update="" site="port.hr" site_id="3" xmltv_id="TV2">TV2</channel>
+  <channel update="" site="mojtv.hr" site_id="1/htv1" xmltv_id="HTV1-mojtv">HTV1</channel>
+  <!--Czech Republic-->
+  <channel update="" site="port.cz" site_id="20004" xmltv_id="ČT1_cz">ČT1_cz</channel>
+  <!--Denmark-->
+  <channel update="" site="tvguide.dk" site_id="DR1" xmltv_id="DR1">DR1</channel>
+  <channel update="" site="ontv.dk" site_id="kanal-5" xmltv_id="Kanal5.dk">Kanal5</channel>
+  <channel update="" site="tvtid.tv2.dk" site_id="11825154" xmltv_id="DR1-tvtid">DR1-tvtid</channel>
+  <!--Finland-->
+  <channel update="" site="telvis.fi" site_id="tv1" xmltv_id="YLE TV1">YLE TV1</channel>
+  <!--France-->
+  <channel update="" site="telerama.fr" site_id="canal-cinema,33" xmltv_id="Canal+ Cinéma">Canal+ Cinéma</channel>
+  <channel update="" site="tvtv.fr" site_id="2518" xmltv_id="TF1">TF1</channel>
+  <channel update="" site="skysiertv.com" site_id="fra3" xmltv_id="France 3 [HD]">France 3 [HD]</channel>
+  <channel update="" site="fr.tv.yahoo.com" site_id="france-2" xmltv_id="France 2">France 2</channel>
+  <channel update="" site="tv.voila.fr" site_id="canal-cinema" xmltv_id="Canal+Cinéma">Canal+Cinéma</channel>
+  <channel update="" site="canalsat.fr" site_id="183" xmltv_id="FRANCE 3 fra">FRANCE 3</channel>
+  <!--Germany-->
+  <channel update="" site="tvtv.de" site_id="1" xmltv_id="Das Erste">Das Erste</channel>
+  <channel update="" site="tvtoday.de" site_id="WDR" xmltv_id="WDR">WDR</channel>
+  <channel update="" site="tvinfo.de" site_id="36" xmltv_id="zdf">zdf</channel>
+  <channel update="" site="tvspielfilm.de" site_id="SIXX" xmltv_id="sixx">sixx</channel>
+  <!--Greece-->
+  <channel update="" site="nova.gr" site_id="61" xmltv_id="novacinema1">novacinema1</channel>
+  <channel update="" site="ishow.gr" site_id="group=10" xmltv_id="cid=31">Πρόγραμμα τηλεόρασης Nova Cinema 1</channel>
+  <channel update="" site="902.gr" site_id="" xmltv_id="902tv">902 TV</channel>
+  <channel update="" site="blueskytv.gr" site_id="" xmltv_id="bluesky">Blue Sky</channel>
+  <channel update="" site="cybc.com.cy" site_id="110" xmltv_id="rik2">ΡΙΚ ΔΥΟ</channel>
+  <channel update="" site="palo.gr" site_id="et1" xmltv_id="et1">ET1</channel>
+  <channel update="" site="sunnychannel.tv" site_id="" xmltv_id="sunny">SUNNY</channel>
+  <channel update="" site="tv.pathfinder.gr" site_id="net-dig" xmltv_id="net-dig">NET</channel>
+  <!--Hong Kong-->
+  <channel update="" site="epg.i-cable.com" site_id="043" xmltv_id="HMC 1">HMC 1</channel>
+  <!--Hungary-->
+  <channel update="" site="port.hu" site_id="1" xmltv_id="m1">m1</channel>
+  <channel update="" site="tavrogzito.upc.hu" site_id="Jh" xmltv_id="m1-upc">m1-upc</channel>
+  <channel update="" site="musor.tv" site_id="FILMBOXEXTRA" xmltv_id="FILMBOXEXTRA">FILMBOXEXTRA</channel>
+  <!--Iceland-->
+  <channel update="" site="skjarinn.is" site_id="his" xmltv_id="History Channel">History Channel</channel>
+  <channel update="" site="stod2.is" site_id="GWL" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+  <channel update="" site="vodafone.is" site_id="3" xmltv_id="STOD2">STOD2</channel>
+  <!--Ireland-->
+  <channel update="" site="tv-guide.upc.ie" site_id="14M" xmltv_id="ITV2">ITV2</channel>
+  <channel update="" site="entertainment.ie" site_id="185" xmltv_id="Commedy">Commedy</channel>
+  <!--Israel-->
+  <channel update="" site="tv.walla.co.il" site_id="//200" xmltv_id="Channel 1">Channel 1</channel>
+  <channel update="" site="isramedia.net" site_id="10" xmltv_id="לוח שידורים ערוץ">לוח שידורים ערוץ</channel>
+  <!--Italie-->
+  <channel update="" site="it.tv.yahoo.com" site_id="rai-uno" xmltv_id="Rai Uno">Rai Uno</channel>
+  <channel update="" site="my.movies.it" site_id="raitre" xmltv_id="RaiTre">RaiTre</channel>
+  <channel update="" site="tv.zam.it" site_id="134" xmltv_id="rai movie">rai movie</channel>
+  <channel update="" site="guidatv.sky.it" site_id="rai-movie" xmltv_id="RaisatCinema.it">Rai Movie</channel>
+  <channel update="" site="rai.it" site_id="RaiUno" xmltv_id="Rai 1">Rai 1</channel>
+  <!--Litauen-->
+  <channel update="" site="tv24.lt" site_id="306" xmltv_id="LTV1">LTV1</channel>
+  <!--Netherlands-->
+  <channel update="" site="tvgids.nl" site_id="1" xmltv_id="Nederland 1">Nederland 1</channel>
+  <channel update="" site="gids.publiekeomroep.nl" site_id="2" xmltv_id="Nederland 2">Nederland 2</channel>
+  <channel update="" site="tvtv.nl" site_id="1032" xmltv_id="BVN">BVN</channel>
+  <channel update="i" site="film1.nl" site_id="2,7,12,17/20" xmltv_id="Film1-action">Film1 Action</channel>
+  <channel update="" site="sport1.nl" site_id="logoLive" xmltv_id="Sport1HD.nl">Sport1 HD</channel>
+  <channel update="" site="disney.nl" site_id="DisneyChannel" xmltv_id="Disney Channel">Disney Channel</channel>
+  <channel update="" site="tvgids.upc.nl" site_id="7K" xmltv_id="RTL 4">RTL 4</channel>
+  <!--New Zealand-->
+  <!--nz.entertainment.yahoo.com, needs cookie file nz.entertainment.cookie.txt, see loadcookie.txt !!-->
+  <channel update="" site="nz.entertainment.yahoo.com" site_id="2" xmltv_id="TV ONE">TV-ONE</channel>
+  <!--Norway-->
+  <channel update="" site="sol.no" site_id="nrktv1" xmltv_id="NRK 1">NRK 1</channel>
+  <channel update="" site="vg.no" site_id="62" xmltv_id="TV1000 Action">TV1000 Action</channel>
+  <!--Poland-->
+  <channel update="" site="programtv.interia.pl" site_id="tvp-1,17024926,10" xmltv_id="TVP 1">TVP 1</channel>
+  <channel update="" site="tv.wp.pl" site_id="2" xmltv_id="TVP 2">TVP 2</channel>
+  <channel update="" site="teleman.pl" site_id="CanalPlus" xmltv_id="CANAL+">CANAL+</channel>
+  <channel update="" site="nagrywanie.upc.pl" site_id="4N" xmltv_id="Polsat">Polsat</channel>
+  <!--Portugal-->
+  <channel update="" site="meo.pt" site_id="1" xmltv_id="RTP1.meo">RTP1</channel>
+  <channel update="" site="portalnacional.com.pt" site_id="RTP1" xmltv_id="RTP 1.Portal">RTP1</channel>
+  <channel update="" site="zon.pt" site_id="5" xmltv_id="RTP1">RTP1</channel>
+  <channel update="" site="cabovisao.pt" site_id="6" xmltv_id="AXN-cabo">AXN</channel>
+  <!--Romania-->
+  <channel update="" site="port.ro" site_id="10017" xmltv_id="Antena 1">Antena 1</channel>
+  <channel update="" site="program24.ro" site_id="7" xmltv_id="TVR 2">TVR 2</channel>
+  <channel update="" site="roportal.ro" site_id="protv" xmltv_id="ProTV">ProTV</channel>
+  <!--Serbia-->
+  <channel update="" site="port.rs" site_id="60078" xmltv_id="RTV1">RTV1</channel>
+  <channel update="" site="rts.rs" site_id="22" xmltv_id="RTS Satelit">RTS Satelit</channel>
+  <!--Singapore-->
+  <channel update="" site="starhub.com.en" site_id="662" xmltv_id="STAR Movies HD">STAR Movies HD</channel>
+  <channel update="" site="starhub.com.zh" site_id="866" xmltv_id="STAR Chinese Movies">STAR Chinese Movies</channel>
+  <channel update="" site="entertainment.xin.msn.com" site_id="Channel 5" xmltv_id="Channel 5">Channel 5</channel>
+  <!--Slovakia-->
+  <channel update="" site="port.sk" site_id="20004" xmltv_id="ČT1">ČT1</channel>
+  <!--Slovenia-->
+  <channel update="" site="mojportal.si" site_id="20/tv-slovenija-2" xmltv_id="TV Slovenija 2.moj">TV Slovenija 2</channel>
+  <channel update="" site="siol.net" site_id="SLO1" xmltv_id="SLO 1">SLO 1</channel>
+  <channel update="" site="rtvslo.si" site_id="2" xmltv_id="TV Slovenija 2.rtv">TV Slovenija 2</channel>
+  <!--South Africa (RSA)-->
+  <channel update="" site="toptv.co.za" site_id="49" xmltv_id="Top One">Top One</channel>
+  <!--dstv.com, needs cookie file dstv.cookie.txt, see loadcookie.txt !!-->
+  <channel update="" site="dstv.com" site_id="89" xmltv_id="M-Net">M-Net</channel>
+  <!--Spain-->
+  <channel update="" site="laguiatv.com" site_id="la-2" xmltv_id="La 2">La 2</channel>
+  <channel update="i" site="sincroguia.tv" site_id="3" xmltv_id="La1">La 1</channel>
+  <channel update="" site="canalplus.es" site_id="CP" xmltv_id="CP">Canal+</channel>
+  <channel update="" site="tvtv.es" site_id="3252" xmltv_id="Antena 3">Antena 3</channel>
+  <channel update="" site="elmundo.es" site_id="510" xmltv_id="laSexta">laSexta</channel>
+  <channel update="" site="canalgasteiz.com" site_id="canalgasteiz" xmltv_id="Canal Gasteiz">Canal Gasteiz</channel>
+  <channel update="" site="hamaika.tv" site_id="hamaika" xmltv_id="Hamaika">Hamaika</channel>
+  <channel update="" site="eitb.com" site_id="SAT2SATELITE" xmltv_id="ETBSAT">ETBSAT</channel>
+  <channel update="" site="axn.es" site_id="" xmltv_id="AXN">AXN</channel>
+  <channel update="" site="calle13.es" site_id="" xmltv_id="Calle 13">Calle 13</channel>
+  <channel update="" site="syfy.es" site_id="" xmltv_id="SyFy">SyFy</channel>
+  <channel update="" site="paramountchannel.es" site_id="paramountchannel" xmltv_id="paramountchannel">Paramount Channel</channel>
+  <!--Sweden-->
+  <channel update="" site="dagenstv.com" site_id="22" xmltv_id="SVT2">SVT2</channel>
+  <channel update="" site="svt.se" site_id="74532" xmltv_id="SVT1">SVT1</channel>
+  <channel update="" site="tv.nu" site_id="tv3" xmltv_id="TV3">TV3</channel>
+  <channel update="" site="ontv.se" site_id="svt-1" xmltv_id="SVT 1">SVT 1</channel>
+  <!--Switzerland-->
+  <channel update="" site="teleboy.ch" site_id="3" xmltv_id="SF 1">SF 1</channel>
+  <channel update="" site="tvtv.ch" site_id="900" xmltv_id="SF zwei">SF zwei</channel>
+  <!--Turkey-->
+  <channel update="" site="digiturk.com.tr" site_id="266" xmltv_id="Moviemax Family">Moviemax Family</channel>
+  <!--UK-->
+  <channel update="i" site="tvguide.co.uk" site_id="70" xmltv_id="BBC1">BBC1</channel>
+  <channel update="" site="radiotimes.com" site_id="BBC1" xmltv_id="BBC1_RadioTimes">BBC1 RadioTimes</channel>
+  <channel update="" site="radiotimes.com.index-only" site_id="BBC1" xmltv_id="BBC1_index-only">BBC1 RadioTimes</channel>
+  <channel update="" site="tvtv.co.uk" site_id="2008" xmltv_id="BBC One">BBC One</channel>
+  <channel update="" site="bfbs.com" site_id="8001" xmltv_id="BFBS">BFBS</channel>
+  <channel update="" site="guardian.co.uk" site_id="ITV 1" xmltv_id="ITV 1">ITV 1</channel>
+  <channel update="" site="mydigiguide.com" site_id="50606" xmltv_id="CBS Drama">CBS Drama</channel>
+  <channel update="" site="uk-tvgenius.com" site_id="102" xmltv_id="BBC2">BBC2</channel>
+  <channel update="" site="uk-sky.com" site_id="1621" xmltv_id="Channel 4">Channel 4</channel>
+  <!--Networks-->
+  <channel update="" site="directv.com" site_id="554" xmltv_id="TMCeHD">MovieEastHDr</channel>
+  <channel update="" site="osnetwork.com" site_id="OM1" xmltv_id="OSN Movies HD">OSN Movies HD</channel>
+  <channel update="" site="yourdiscovery.com" site_id="DCAU-ENG" xmltv_id="Discovery Channel">Discovery Channel</channel>
+  <channel update="" site="tvguide.com.National-Eastern" site_id="5942" xmltv_id="ABC">ABC</channel>
+  <channel update="" site="bbc.co.uk" site_id="299" xmltv_id="Hong Kong">Hong Kong</channel>
+  <channel update="" site="australianetwork.com" site_id="singapor" xmltv_id="Singapore">Singapore</channel>
+  <channel update="" site="radioaustralia.net.au" site_id="asia" xmltv_id="asia">asia</channel>
+  <channel update="" site="lebouquetafricain.com" site_id="ortm" xmltv_id="ortm-mali">ortm-mali</channel>
+  <channel update="" site="da-vinci-learning.com" site_id="en" xmltv_id="Da-Vinci.en">Da Vinci Learning</channel>
+  <channel update="" site="canalplus-afrique.com.mali" site_id="15468" xmltv_id="ACTION-afrique">ACTION</channel>
+  <channel update="" site="canalplus-reunion.com" site_id="13131" xmltv_id="ACTION-reunion">ACTION</channel>
+  <channel update="" site="canalplus-caraibes.com.martinique" site_id="264425" xmltv_id="ARTE">ARTE</channel>
+</settings>

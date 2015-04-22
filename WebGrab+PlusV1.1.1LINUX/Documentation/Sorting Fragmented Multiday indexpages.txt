@@ -1,0 +1,18 @@
+Sorting a fragmented multiday index page.
+Program version 1.0.7 Beta
+
+Intro: If a site with a multiday indexpage has a fragmented time structure that list first all shows for all days for a certain part of the day (like the morning) followed by a listing for all days of the next part of the day (like the afternoon) etc, the sort attribute of the index_showsplit.scrub attempts to defragmentize this by sorting the shows.
+
+Use:
+index_showsplit.scrub {multi(sort)|.....}  * this will try to figure out the fragmented structure automatically by assuming that after a negative timejump in the start time of the shows the next show in the next fragment will occur on or after the next full hour after the show before the time jump. This mode is identical to:
+index_showsplit.scrub {multi(sort@fullhour)|.....} 
+A variant of the automatic mode, assuming that the next show in the next fragment happens on or after the next half hour :
+index_showsplit.scrub {multi(sort@halfhour)|.....}
+If the automatic modes cannot be used the exact moment of the fragment transient can be specified
+index_showsplit.scrub {multi(sort@14:00,20:00)|.....} * this will place the first show of the next fragment on- or on the first show after the specified times.
+
+Debug: The debug attribute is supported and lists all the sorted start times in the lof file.
+
+Remark: Remember to specify the multiday structure in the site constant maxdays like
+site {maxdays=5.1} * maximum of 5 days on 1 page .. or
+site {maxdays=10.2} * maximum of 10 days on 2 pages   .. etc

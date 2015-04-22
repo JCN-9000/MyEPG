@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.53.13/0.05 -- Jan van Straaten" site="movietele.it">
+  <channels>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 1">Premium Calcio 1</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 2">Premium Calcio 2</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 3">Premium Calcio 3</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 4">Premium Calcio 4</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 5">Premium Calcio 5</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio 6">Premium Calcio 6</channel>
+    <channel update="i" site="movietele.it" site_id="canale-5" xmltv_id="Canale 5">Canale 5</channel>
+    <channel update="i" site="movietele.it" site_id="italia-1" xmltv_id="Italia 1">Italia 1</channel>
+    <channel update="i" site="movietele.it" site_id="rete-4" xmltv_id="Retequattro">Retequattro</channel>
+    <channel update="i" site="movietele.it" site_id="la-5" xmltv_id="La 5">La 5</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-extra" xmltv_id="Mediaset Extra">Mediaset Extra</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-italia-2" xmltv_id="Medaiset Italia 2">Medaiset Italia 2</channel>
+    <channel update="i" site="movietele.it" site_id="top-crime" xmltv_id="Top Crime">Top Crime</channel>
+    <channel update="i" site="movietele.it" site_id="iris" xmltv_id="Iris">Iris</channel>
+    <channel update="i" site="movietele.it" site_id="joi" xmltv_id="Joi">Joi</channel>
+    <channel update="i" site="movietele.it" site_id="mya" xmltv_id="Mya">Mya</channel>
+    <channel update="i" site="movietele.it" site_id="steel" xmltv_id="Steel">Steel</channel>
+    <channel update="i" site="movietele.it" site_id="premium-cinema" xmltv_id="Premium Cinema">Premium Cinema</channel>
+    <channel update="i" site="movietele.it" site_id="premium-cinema-energy" xmltv_id="Cinema Energy">Cinema Energy</channel>
+    <channel update="i" site="movietele.it" site_id="premium-cinema-emotion" xmltv_id="Cinema Emotion">Cinema Emotion</channel>
+    <channel update="i" site="movietele.it" site_id="premium-cinema-comedy" xmltv_id="Cinema Comedy">Cinema Comedy</channel>
+    <channel update="i" site="movietele.it" site_id="studio-universal" xmltv_id="Studio Universal">Studio Universal</channel>
+    <channel update="i" site="movietele.it" site_id="bbc-knowledge" xmltv_id="BBC Knowledge">BBC Knowledge</channel>
+    <channel update="i" site="movietele.it" site_id="discovery-world" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="movietele.it" site_id="premium-crime" xmltv_id="Premium Crime">Premium Crime</channel>
+    <channel update="i" site="movietele.it" site_id="mediaset-premium-calcio" xmltv_id="Premium Calcio">Premium Calcio</channel>
+    <channel update="i" site="movietele.it" site_id="disney-channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="movietele.it" site_id="disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="movietele.it" site_id="cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="movietele.it" site_id="raiuno" xmltv_id="Rai Uno">Rai Uno</channel>
+    <channel update="i" site="movietele.it" site_id="raidue" xmltv_id="Rai Due">Rai Due</channel>
+    <channel update="i" site="movietele.it" site_id="raitre" xmltv_id="Rai Tre">Rai Tre</channel>
+    <channel update="i" site="movietele.it" site_id="raiquattro" xmltv_id="Rai Quattro">Rai Quattro</channel>
+    <channel update="i" site="movietele.it" site_id="raicinque" xmltv_id="Rai Cinque">Rai Cinque</channel>
+    <channel update="i" site="movietele.it" site_id="raimovie" xmltv_id="Rai Movie">Rai Movie</channel>
+    <channel update="i" site="movietele.it" site_id="raistoria" xmltv_id="Rai Storia">Rai Storia</channel>
+    <channel update="i" site="movietele.it" site_id="raipremium" xmltv_id="Rai Premium">Rai Premium</channel>
+    <channel update="i" site="movietele.it" site_id="raiyoyo" xmltv_id="Rai YoYo">Rai YoYo</channel>
+    <channel update="i" site="movietele.it" site_id="raigulp" xmltv_id="Rai Gulp">Rai Gulp</channel>
+    <channel update="i" site="movietele.it" site_id="raisport1" xmltv_id="Rai Sport 1">Rai Sport 1</channel>
+    <channel update="i" site="movietele.it" site_id="raisport2" xmltv_id="Rai Sport 2">Rai Sport 2</channel>
+    <channel update="i" site="movietele.it" site_id="alice" xmltv_id="Alice">Alice</channel>
+    <channel update="i" site="movietele.it" site_id="animal-planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="movietele.it" site_id="axn" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="movietele.it" site_id="boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="movietele.it" site_id="cielo" xmltv_id="Cielo">Cielo</channel>
+    <channel update="i" site="movietele.it" site_id="comedy-central" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="movietele.it" site_id="deakids" xmltv_id="DeAKids">DeAKids</channel>
+    <channel update="i" site="movietele.it" site_id="discovery-channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="movietele.it" site_id="discovery-real-time" xmltv_id="Real Time">Real Time</channel>
+    <channel update="i" site="movietele.it" site_id="discovery-science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="movietele.it" site_id="disney-xd" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="movietele.it" site_id="diva-universal" xmltv_id="Diva Universal">Diva Universal</channel>
+    <channel update="i" site="movietele.it" site_id="sky-sport-f1" xmltv_id="Sky Sport F1">Sky Sport F1</channel>
+    <channel update="i" site="movietele.it" site_id="easy-baby" xmltv_id="Easy Baby">Easy Baby</channel>
+    <channel update="i" site="movietele.it" site_id="espn-classic" xmltv_id="ESPN Classic">ESPN Classic</channel>
+    <channel update="i" site="movietele.it" site_id="eurosport" xmltv_id="Europosrt">Europosrt</channel>
+    <channel update="i" site="movietele.it" site_id="eurosport2" xmltv_id="Europosrt 2">Europosrt 2</channel>
+    <channel update="i" site="movietele.it" site_id="fox" xmltv_id="Fox">Fox</channel>
+    <channel update="i" site="movietele.it" site_id="fox-crime" xmltv_id="Fox Crime">Fox Crime</channel>
+    <channel update="i" site="movietele.it" site_id="fox-life" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="movietele.it" site_id="fox-retro" xmltv_id="Fox Retro">Fox Retro</channel>
+    <channel update="i" site="movietele.it" site_id="gambero-rosso-channel" xmltv_id="Gambero Rosso">Gambero Rosso</channel>
+    <channel update="i" site="movietele.it" site_id="national-geographic" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="movietele.it" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="movietele.it" site_id="sky-3d" xmltv_id="Sky 3D">Sky 3D</channel>
+    <channel update="i" site="movietele.it" site_id="sky-arte" xmltv_id="Sky Arte">Sky Arte</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema1" xmltv_id="Sky Cinema 1">Sky Cinema 1</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-classics" xmltv_id="Sky Cinema Classics">Sky Cinema Classics</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-comedy" xmltv_id="Sky Cinema Comedy">Sky Cinema Comedy</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-cult" xmltv_id="Sky Cinema Cult">Sky Cinema Cult</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-family" xmltv_id="Sky Cinema Family">Sky Cinema Family</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-hits" xmltv_id="Sky Cinema Hits">Sky Cinema Hits</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-max" xmltv_id="Sky Cinema Max">Sky Cinema Max</channel>
+    <channel update="i" site="movietele.it" site_id="sky-cinema-passion" xmltv_id="Sky Cinema Passion">Sky Cinema Passion</channel>
+    <channel update="i" site="movietele.it" site_id="sky-sport1" xmltv_id="Sky Sport 1">Sky Sport 1</channel>
+    <channel update="i" site="movietele.it" site_id="sky-sport2" xmltv_id="Sky Sport 2">Sky Sport 2</channel>
+    <channel update="i" site="movietele.it" site_id="sky-sport3" xmltv_id="Sky Sport 3">Sky Sport 3</channel>
+    <channel update="i" site="movietele.it" site_id="sky-sport-extra" xmltv_id="Sky Sport Extra">Sky Sport Extra</channel>
+    <channel update="i" site="movietele.it" site_id="sky-supercalcio" xmltv_id="Sky Supercalcio">Sky Supercalcio</channel>
+    <channel update="i" site="movietele.it" site_id="sky-uno" xmltv_id="Sky Uno">Sky Uno</channel>
+    <channel update="i" site="movietele.it" site_id="the-history-channel" xmltv_id="The History Channel">The History Channel</channel>
+    <channel update="i" site="movietele.it" site_id="la7" xmltv_id="La7">La7</channel>
+    <channel update="i" site="movietele.it" site_id="mtv" xmltv_id="MTV">MTV</channel>
+  </channels>
+</site>

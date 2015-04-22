@@ -1,0 +1,8 @@
+﻿Time-offset-channels. 
+Some sites list channels that differ only from another through a time difference. Instead of grabbing the epg separately it is possible to just copy and time-shift the 'source' channel with a special channel specification in Webgrab++.config.xml
+For that use the attributes same_as  and  offset as follows:
+Example of time-offset-channels :
+<channel update="i" site="laguiatv.com" site_id="Canal +" xmltv_id="Canal +">Canal +</channel>
+<channel same_as="Canal +" offset="2" xmltv_id="Canal + 2">Canal + 2</channel>
+The source channel (here ="Canal +") must always be listed before the time-offset-channel (here "Canal + 2") The offset can also be negative like offset="-1" 
+

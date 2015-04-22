@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.54.6/0.01 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
+  <channel id="Giallo">
+    <display-name lang="it">Giallo</display-name>
+    <url>http://www.tv.zam.it</url>
+  </channel>
+  <programme start="20150419005000 +0200" stop="20150419015000 +0200" channel="Giallo">
+    <title lang="it">Waking the dead</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419015000 +0200" stop="20150419024500 +0200" channel="Giallo">
+    <title lang="it">Waking the dead</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419024500 +0200" stop="20150419034000 +0200" channel="Giallo">
+    <title lang="it">Quincy</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419034000 +0200" stop="20150419042500 +0200" channel="Giallo">
+    <title lang="it">Quincy</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419042500 +0200" stop="20150419051000 +0200" channel="Giallo">
+    <title lang="it">Squadra emergenza</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419051000 +0200" stop="20150419060000 +0200" channel="Giallo">
+    <title lang="it">Squadra emergenza</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419060000 +0200" stop="20150419065000 +0200" channel="Giallo">
+    <title lang="it">Jag - avvocati in divisa</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419065000 +0200" stop="20150419074000 +0200" channel="Giallo">
+    <title lang="it">Jag - avvocati in divisa</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419074000 +0200" stop="20150419083000 +0200" channel="Giallo">
+    <title lang="it">Jag - avvocati in divisa</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419083000 +0200" stop="20150419092000 +0200" channel="Giallo">
+    <title lang="it">Wolff - un poliziotto a berlino</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419092000 +0200" stop="20150419102000 +0200" channel="Giallo">
+    <title lang="it">Wolff - un poliziotto a berlino</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419102000 +0200" stop="20150419111000 +0200" channel="Giallo">
+    <title lang="it">Wolff - un poliziotto a berlino</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419111000 +0200" stop="20150419121000 +0200" channel="Giallo">
+    <title lang="it">Peccati mortali</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419121000 +0200" stop="20150419121000 +0200" channel="Giallo">
+    <title lang="it">Peccati mortali</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419150500 +0200" stop="20150419155500 +0200" channel="Giallo">
+    <title lang="it">King</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419155500 +0200" stop="20150419155500 +0200" channel="Giallo">
+    <title lang="it">King</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419192000 +0200" stop="20150419201500 +0200" channel="Giallo">
+    <title lang="it">Women's murder club</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+  <programme start="20150419201500 +0200" stop="20150419201500 +0200" channel="Giallo">
+    <title lang="it">Women's murder club</title>
+    <desc lang="it">Senza ulteriori dettagli...</desc>
+  </programme>
+</tv>

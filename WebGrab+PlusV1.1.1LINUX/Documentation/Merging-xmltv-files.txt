@@ -1,0 +1,36 @@
+How to best merge your existing xmltv file with the one from WG++:
+
+***** The easiest way ; add for each channel you want to preserve from your xmltv file an entry in the channellist of the WG++ config file like this:
+ 
+<channel update="" site="tvguide.co.uk" xmltv_id="BBC1">BBC 1</channel>
+ 
+in which : 
+--site refers to the siteini file "tvguide.co.uk.ini" , you can take any already existing siteini file there that refers to a site in the same country as for the channel.
+ --xmltv_id is the id of the channel as found in the channel node in the xmltv file like <channel id="BBC1">
+ --BBC 1 is the display-name as in <display-name lang="en">BBC 1</display-name> in the xmltv file
+ --there is no need for the site_id, because that is only in use while updating
+ --it is essential to leave update="" (no value!!) otherwise WG++ will try to update which will fail because there is no site_id
+ The disadvantage of this simple way is that the url element of the channel node in the xmltv will get the value url="http://www.tvguide.co.uk" which is probably different from the original.
+ 
+
+***** Slightly more complicated but doesn't have this disadvantage:
+ Suppose the channels you want to preserve originate from sitename.com, then add for each channel to preserve:
+ 
+<channel update="" site="sitename.com" xmltv_id="BBC1">BBC 1</channel>
+ 
+Now WG++ will expect a siteini file sitename.com.ini to be present and since its not there you have to make it!
+ Open a text editor (like notepad) and add just one line:
+ 
+site {timezone=UTC+00:00|cultureinfo=en-GB}
+ 
+and save as sitename.com.ini in C:\ProgramData\ServerCare\WebGrab.
+ The timezone and cultureinfo values have to correspond with the country settings of the site , the ones I used are correct for the UK
+ If some of the channels you want to preserve are from other sites you can add corresponding siteini files.
+ This method will add a correct channel node to the xmltv and also correct timeoffset values and dlt changes.
+ 
+ The siteini file empty.ini, already available in the distributed files, is an example of such a 'for merging only' siteini file. It contain 'empty' values for cultureinfo and timezone. This will cause the timezone to be left untouched and the language setting to be set to "iv" (invariant, = no specific language). This 'empty.ini' siteini file is autamatically selected when no site value is specified. Like in :
+ 
+ <channel update=""  xmltv_id="BBC1">BBC 1</channel>
+ or:
+ <channel update="" site="" xmltv_id="BBC1">BBC 1</channel>
+ 

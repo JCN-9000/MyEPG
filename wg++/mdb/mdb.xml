@@ -1,0 +1,29 @@
+﻿<shows generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.54.6/0.01 -- Jan van Straaten">
+  <no-match>
+    <entry-date>20150418</entry-date>
+    <attempts>1</attempts>
+    <searchstring>SCOOBY DOO SHOW/SCOOBY-DOO I-II +  (1976) + </searchstring>
+  </no-match>
+  <show>
+    <entry-date>20150418</entry-date>
+    <showid>0455967</showid>
+    <titles>
+      <title>Il mio ragazzo è un bastardo</title>
+    </titles>
+    <credits>
+      <director>&lt;h4 class="inline"&gt;Director:&lt;/h4&gt;
+&lt;a href="/name/nm0858525/?ref_=tt_ov_dr"
+itemprop='url'&gt;&lt;span class="itemprop" itemprop="name"&gt;Betty Thomas&lt;/span&gt;</director>
+      <director>
+      </director>
+      <actor>&lt;h4 class="inline"&gt;Stars:&lt;/h4&gt;
+&lt;a href="/name/nm0582462/?ref_=tt_ov_st"
+itemprop='url'&gt;&lt;span class="itemprop" itemprop="name"&gt;Jesse Metcalfe&lt;/span&gt;</actor>
+      <actor>
+      </actor>
+    </credits>
+    <date>2006</date>
+    <star-rating votes="59,092">5.7</star-rating>
+    <description>Directed by Betty Thomas.  With Jesse Metcalfe, Ashanti, Arielle Kebbel, Sophia Bush. Three ex-girlfriends of a serial cheater set up their former lover to fall for the new girl in town so they can watch him get his heart broken.</description>
+  </show>
+</shows>

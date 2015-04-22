@@ -1,0 +1,18 @@
+<channels>
+  <channel time_error="+1">MPRINCI</channel>
+  <channel time_error="+1">DISCM</channel>
+  <channel time_error="+2">NATGEOMEX</channel>
+  <channel time_error="+2">HISTORY</channel>
+  <channel time_error="+1">EINT</channel>
+  <channel time_error="+1">WARNER</channel>
+  <channel time_error="+1">SONY</channel>
+  <channel time_error="+1">SPACEM</channel>
+  <channel time_error="+2">TNT</channel>
+  <channel time_error="+1">AXN</channel>
+  <channel time_error="+1">TRAVEL</channel>
+  <channel time_error="+2">UNI</channel>
+  <channel time_error="+1">MTVL</channel>
+  <channel time_error="+3">BOOMLM</channel>
+  <channel time_error="-3">650 MOVIECITY</channel>
+  <channel time_error="-3">651 MOVIECITY</channel>
+</channels>

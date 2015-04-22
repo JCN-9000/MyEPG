@@ -1,0 +1,60 @@
+How to install and execute WebGrab+Plus in Linux by means of mono.
+by Alberto Miguel, 06/07/2012
+
+WebGrab+Plus have been tested with MONO 2.10.8 and 2.11.
+
+Installation:
+
+Create a 'homefolder' for WebGrab+Plus, eg "/home/user/WebGrab".
+You need read and write permissions for the folders and files in this 'homefolfer'.
+
+Copy the following files and folders to this 'homefolder'
+ 
+- WebGrab+Plus.exe
+- WebGrab++.config.xml
+- The siteini files
+- mdb & rex folders
+ 
+Execute:
+ 
+First, you need to set the <filename> in WebGrab++.config.xml to a  complete linux path, like this:
+ 
+<filename>/home/user/WebGrab/guide.xml</filename>
+
+Do the same for <filename> and <ldbfilename> in mdb.config.xml and for  <filename> in rex.config.xml
+ 
+Add or adjust the channellist in WebGrab++.config.xml and 
+adjust the other settings of the config files if necessary. 
+ 
+Then, enter in terminal mode: 
+mono WebGrab+Plus.exe “complete_path_to_'homefolder'” like : 
+mono WebGrab+Plus.exe “/home/user/WebGrab” 
+ 
+That’s all...
+
+??? Support @ ??? Some link to a forum/website??
+ 
+(If you need delete the timezone on the guide.xml, on linux is easy, you can execute: 
+sed 's/ +0200//g' guide.xml > guide_no_timezone.xml 
+In this case, the timezone is +0200.)
+
+
+---------------------------------------------------------------------------
+Additional remarks concerning grabbing sincroguia with the Linux version:
+
+A problem, with sincroguia, well, a problem with https urls on mono:
+
+ Sometimes, the first time you run the sw you see this error:
+ "Error #-2146762486: CERT_E_CHAINING 0x800B010A"
+ or
+ "Error downloading page: Error getting response stream (Write: The authentication or decryption has failed.): SendFailure"
+
+ This is caused because mono don't trust the certificate authority. You need add this certificate to mono.
+ To do this you need execute the command: (certmgr is a mono command)
+ certmgr -add -c Trust "certificate.cer"
+
+ More info: http://www.mono-project.com/FAQ:_Security and http://pwet.fr/man/linux/commandes/certmgr
+
+ In the sincroguia's case, you need to export the "GeoTrust Global CA" certificate as "DER binary codified X.509" from IE or Firefox.
+ If you don't have this certificate, you can download from http://www.geotrust.com/resources/root-certificates/index.html , import to the web browser and then export it.
+ After that, the program works well.

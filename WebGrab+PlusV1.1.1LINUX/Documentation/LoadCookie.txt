@@ -1,0 +1,13 @@
+WebGrab+Plus V1.0.9 --- Load Cookie:
+
+If a site requires a login with username and stores your personal settings in a cookie, it is necessary to load this cookie into WG++ for it to send to this site as part of the WebRequest.
+
+This is done by :
+
+1. Ensure that your internet browser is set to accept cookies.
+2. With your internet browser, navigate to the site and login with your username and password if the site requires that. Adapt the personal settings (like region and/or tv provider). It might be a good idea to refresh the page to check if all settings are correct. This also updates the cookie that the site stores on your computer.
+3. Save the cookies to a file : In your internet browser there is an option to export cookies. (In IE8 or 9, File - Import and Export - Export to a File - Cookies). This file should be saved to the WebGrab+Plus homefolder C:\ProgramData\ServerCare\WebGrab and given an unique name (different from eventual other cookie files in this folder). A good choose for the cookie-file-name would be yourtv.com.au.cookie.txt (if the site for which it's needed is yourtv.com.au.)
+4. Add (or change) the following entry in the siteini file for the site that needs this cookie file:
+site {loadcookie=cookie-file-name}
+5. The program attempts to correct eventual expired cookie entries. It will issue a warning if it did that. If despite this correction the effect of the cookie is not as usual renew the cookie file following 1. to 3.
+6. More information in the documentation , section 4.3 (General Site Dependant data)

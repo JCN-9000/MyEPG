@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.54.6/0.01 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
+  <channel id="Rai 1">
+    <display-name lang="it">Rai 1</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai 2">
+    <display-name lang="it">Rai 2</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai 3">
+    <display-name lang="it">Rai 3</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="La7">
+    <display-name lang="it">La7</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai 4">
+    <display-name lang="it">Rai 4</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Cielo">
+    <display-name lang="it">Cielo</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Movie">
+    <display-name lang="it">Rai Movie</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="MTV">
+    <display-name lang="it">MTV</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="RTL 102.5">
+    <display-name lang="it">RTL 102.5</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai 5">
+    <display-name lang="it">Rai 5</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="La7D">
+    <display-name lang="it">La7D</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Real Time">
+    <display-name lang="it">Real Time</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Deejay TV">
+    <display-name lang="it">Deejay TV</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="K2">
+    <display-name lang="it">K2</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Frisbee">
+    <display-name lang="it">Frisbee</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Deejay TV +2">
+    <display-name lang="it">Deejay TV +2</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Tv 2000">
+    <display-name lang="it">Tv 2000</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Premium">
+    <display-name lang="it">Rai Premium</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Yoyo">
+    <display-name lang="it">Rai Yoyo</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Gulp">
+    <display-name lang="it">Rai Gulp</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Storia">
+    <display-name lang="it">Rai Storia</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Sport 1">
+    <display-name lang="it">Rai Sport 1</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai Sport 2">
+    <display-name lang="it">Rai Sport 2</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Rai News">
+    <display-name lang="it">Rai News</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="QVC">
+    <display-name lang="it">QVC</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Nuvolari">
+    <display-name lang="it">Nuvolari</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Coming Soon Television">
+    <display-name lang="it">Coming Soon Television</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Poker Italia 24">
+    <display-name lang="it">Poker Italia 24</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="MTV Music">
+    <display-name lang="it">MTV Music</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <channel id="Super tennis">
+    <display-name lang="it">Super tennis</display-name>
+    <url>http://www.www.myblobbox.com</url>
+  </channel>
+  <programme start="20150418001500 +0200" stop="20150418004500 +0200" channel="Rai 1">
+    <title lang="it">TG 1 NOTTE</title>
+    <desc lang="it">Rai 1</desc>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418005000 +0200" channel="Rai 1">
+    <title lang="it">Che tempo fa</title>
+    <desc lang="it">Previsioni meteorologiche della giornata e dei prossimi giorni in tutta Italia</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418005000 +0200" stop="20150418014000 +0200" channel="Rai 1">
+    <title lang="it">Cinematografo</title>
+    <desc lang="it">Rubrica che si occupa di cinema e fiction televisiva puntando le telecamere sui set e i backstage delle produzioni. Al ..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418014000 +0200" stop="20150418015500 +0200" channel="Rai 1">
+    <title lang="it">Sottovoce</title>
+    <desc lang="it">Talk show quotidiano. Gigi Marzullo intervista personaggi noti della scena nazionale e internazionale</desc>
+    <category lang="it">Talk show</category>
+  </programme>
+  <programme start="20150418015500 +0200" stop="20150418022500 +0200" channel="Rai 1">
+    <title lang="it">Rewind - Visioni Private Claudio Magris</title>
+    <desc lang="it">Rai 1</desc>
+  </programme>
+  <programme start="20150418022500 +0200" stop="20150418041500 +0200" channel="Rai 1">
+    <title lang="it">Le avventure della villeggiatura</title>
+    <desc lang="it">Rai 1</desc>
+  </programme>
+  <programme start="20150418041500 +0200" stop="20150418051500 +0200" channel="Rai 1">
+    <title lang="it">Da da da</title>
+    <desc lang="it">Il programma si sviluppa su sequenze ininterrotte di immagini, seguendo un preciso filo conduttore monotematico, e si avvale del repertorio ..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418005500 +0200" channel="Rai 2">
+    <title lang="it">Senza Peccato</title>
+    <desc lang="it">Rai 2</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418021500 +0200" channel="Rai 2">
+    <title lang="it">FILM Una carriera a tutti i costi</title>
+    <desc lang="it">Rai 2</desc>
+  </programme>
+  <programme start="20150418021500 +0200" stop="20150418022000 +0200" channel="Rai 2">
+    <title lang="it">Appuntamento al cinema</title>
+    <desc lang="it">Le news e i trailer dei film in uscita nelle sale italiane</desc>
+    <category lang="it">Approfondimento</category>
+  </programme>
+  <programme start="20150418022000 +0200" stop="20150418042000 +0200" channel="Rai 2">
+    <title lang="it">A gentile richiesta ovvero Speciale per me Meno siamo e meglio stiamo</title>
+    <desc lang="it">Rai 2</desc>
+  </programme>
+  <programme start="20150418042000 +0200" stop="20150418043500 +0200" channel="Rai 2">
+    <title lang="it">Videocomic Passerella di comici in tv</title>
+    <desc lang="it">Rai 2</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418001000 +0200" channel="Rai 3">
+    <title lang="it">Tg3 Linea Notte</title>
+    <desc lang="it">Approfondimento sulle notizie di attualità</desc>
+    <category lang="it">Approfondimento</category>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418001300 +0200" channel="Rai 3">
+    <title lang="it">Tg regione</title>
+    <desc lang="it">Ultime notizie dalla regione di appartenenza</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418001300 +0200" stop="20150418010000 +0200" channel="Rai 3">
+    <title lang="it">Tg3 Linea Notte</title>
+    <desc lang="it">Approfondimento sulle notizie di attualità</desc>
+    <category lang="it">Approfondimento</category>
+  </programme>
+  <programme start="20150418010000 +0200" stop="20150418010500 +0200" channel="Rai 3">
+    <title lang="it">Meteo 3</title>
+    <desc lang="it">Rai 3</desc>
+  </programme>
+  <programme start="20150418010500 +0200" stop="20150418011500 +0200" channel="Rai 3">
+    <title lang="it">Parlamento Telegiornale</title>
+    <desc lang="it">Rai 3</desc>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418012000 +0200" channel="Rai 3">
+    <title lang="it">Appuntamento al cinema</title>
+    <desc lang="it">Trailer e news dei film in uscita nei cinema italiani</desc>
+    <category lang="it">Approfondimento</category>
+  </programme>
+  <programme start="20150418012000 +0200" stop="20150418015000 +0200" channel="Rai 3">
+    <title lang="it">Magazzini Einstein Il Futurismo in Sicilia</title>
+    <desc lang="it">Rai 3</desc>
+  </programme>
+  <programme start="20150418015000 +0200" stop="20150418020000 +0200" channel="Rai 3">
+    <title lang="it">Fuori orario. Cose (mai) viste</title>
+    <desc lang="it">Programma dedicato al cinema e alla televisione d'autore</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418031000 +0200" channel="Rai 3">
+    <title lang="it">FILM L\'amore</title>
+    <desc lang="it">Rai 3</desc>
+  </programme>
+  <programme start="20150418031000 +0200" stop="20150418050000 +0200" channel="Rai 3">
+    <title lang="it">FILM Inquiétude</title>
+    <desc lang="it">Rai 3 (c)</desc>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418054000 +0200" channel="Rai 3">
+    <title lang="it">Fuori orario. Cose (mai) viste</title>
+    <desc lang="it">Programma dedicato al cinema e alla televisione d'autore</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418010000 +0200" channel="La7">
+    <title lang="it">Tg La7</title>
+    <desc lang="it">Le notizie d'attualita' e..</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418010000 +0200" stop="20150418013500 +0200" channel="La7">
+    <title lang="it">Otto e mezzo</title>
+    <desc lang="it">Ep. 174 - Politica,..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418013500 +0200" stop="20150418025000 +0200" channel="La7">
+    <title lang="it">Coffee Break</title>
+    <desc lang="it">Ep. 179 - Il programma..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418025000 +0200" stop="20150418050000 +0200" channel="La7">
+    <title lang="it">L\'Aria Che Tira</title>
+    <desc lang="it">Ep. 134 - Myrta Merlino..</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418012100 +0200" stop="20150418012400 +0200" channel="Rai 4">
+    <title lang="it">Anica Appuntamento al Cinema</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418012400 +0200" stop="20150418012700 +0200" channel="Rai 4">
+    <title lang="it">Rai News - Notte</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418012700 +0200" stop="20150418030600 +0200" channel="Rai 4">
+    <title lang="it">Star Trek V - Ultima frontiera</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418030600 +0200" stop="20150418035200 +0200" channel="Rai 4">
+    <title lang="it">Robin Hood II Ep.12</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418035200 +0200" stop="20150418043500 +0200" channel="Rai 4">
+    <title lang="it">Stargate Atlantis V Ep.10</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418043500 +0200" stop="20150418051700 +0200" channel="Rai 4">
+    <title lang="it">Star Trek Enterprise III Ep.12</title>
+    <desc lang="it">Rai 4</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418010000 +0200" channel="Cielo">
+    <title lang="it">Per amor di Dio - La sposa del prete</title>
+    <desc lang="it">Documentario che indaga..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418010000 +0200" stop="20150418014500 +0200" channel="Cielo">
+    <title lang="it">The Sex Inspectors - Segreti di coppia</title>
+    <desc lang="it">2' Stagione Ep.2 - 'Sean..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418014500 +0200" stop="20150418024500 +0200" channel="Cielo">
+    <title lang="it">The Joy of Teen Sex</title>
+    <desc lang="it">Ep. 6 - Una trasmissione..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418024500 +0200" stop="20150418043000 +0200" channel="Cielo">
+    <title lang="it">Country strong</title>
+    <desc lang="it">Regia di S. Feste, con..</desc>
+    <category lang="it">Film</category>
+  </programme>
+  <programme start="20150418043000 +0200" stop="20150418053000 +0200" channel="Cielo">
+    <title lang="it">Most Dangerous - Pericolo reale</title>
+    <desc lang="it">2' Stagione Ep.4 - 'Wild..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418005000 +0200" channel="Rai Movie">
+    <title lang="it">Rai News - Notte</title>
+    <desc lang="it">Rai Movie</desc>
+  </programme>
+  <programme start="20150418005000 +0200" stop="20150418005500 +0200" channel="Rai Movie">
+    <title lang="it">ANICA - Appuntamento al cinema</title>
+    <desc lang="it">Rai Movie</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418022500 +0200" channel="Rai Movie">
+    <title lang="it">Elektra</title>
+    <desc lang="it">Rai Movie</desc>
+  </programme>
+  <programme start="20150418022500 +0200" stop="20150418025500 +0200" channel="Rai Movie">
+    <title lang="it">Movie.Mag</title>
+    <desc lang="it">Rai Movie</desc>
+  </programme>
+  <programme start="20150418025500 +0200" stop="20150418044500 +0200" channel="Rai Movie">
+    <title lang="it">Hansel e Gretel</title>
+    <desc lang="it">Rai Movie</desc>
+  </programme>
+  <programme start="20150418001500 +0200" stop="20150418011500 +0200" channel="MTV">
+    <title lang="it">Gandia Shore</title>
+    <desc lang="it">Secret Diary - In questo..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418014000 +0200" channel="MTV">
+    <title lang="it">Ridiculousness: Veri American Idiots</title>
+    <desc lang="it">2' Stagione Ep.2 - Lo..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418014000 +0200" stop="20150418020000 +0200" channel="MTV">
+    <title lang="it">Ridiculousness: Veri American Idiots</title>
+    <desc lang="it">2' Stagione Ep.3 - Lo..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418022000 +0200" channel="MTV">
+    <title lang="it">Speciale MTV News</title>
+    <desc lang="it">Story of The Day -..</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418022000 +0200" stop="20150418024500 +0200" channel="MTV">
+    <title lang="it">I soliti idioti</title>
+    <desc lang="it">3' Stagione Ep.1 - Donne,..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418024500 +0200" stop="20150418025500 +0200" channel="MTV">
+    <title lang="it">I soliti idioti</title>
+    <desc lang="it">3' Stagione Ep.2 - Donne,..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418025500 +0200" stop="20150418034000 +0200" channel="MTV">
+    <title lang="it">Jersey Shore</title>
+    <desc lang="it">5' Stagione Ep.2 - One..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418042500 +0200" channel="MTV">
+    <title lang="it">Plain Jane: La Nuova Me</title>
+    <desc lang="it">3' Stagione Ep.2 - Jen fa..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418042500 +0200" stop="20150418044500 +0200" channel="MTV">
+    <title lang="it">Friendzone: Amici o Fidanzati?</title>
+    <desc lang="it">2' Stagione Ep.19 - Alex..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418044500 +0200" stop="20150418050500 +0200" channel="MTV">
+    <title lang="it">Friendzone: Amici o Fidanzati?</title>
+    <desc lang="it">2' Stagione Ep.20 -..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418050500 +0200" stop="20150418052500 +0200" channel="MTV">
+    <title lang="it">Friendzone: Amici o Fidanzati?</title>
+    <desc lang="it">1' Stagione Ep.1 - Amici..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418052500 +0200" stop="20150418054500 +0200" channel="MTV">
+    <title lang="it">Speciale MTV News</title>
+    <desc lang="it">Story of The Day -..</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20150418000200 +0200" stop="20150418000400 +0200" channel="Rai 5">
+    <title lang="it">INTRO ZZ TOP DOUBLE DOWN LIVE</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418000400 +0200" stop="20150418010900 +0200" channel="Rai 5">
+    <title lang="it">ZZ TOP - DOUBLE DOWN LIVE</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418010900 +0200" stop="20150418011200 +0200" channel="Rai 5">
+    <title lang="it">RAI NEWS - NOTTE</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418011200 +0200" stop="20150418011500 +0200" channel="Rai 5">
+    <title lang="it">INTRO FEDELE ALLA LINEA</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418023100 +0200" channel="Rai 5">
+    <title lang="it">FEDELE ALLA LINEA</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418023100 +0200" stop="20150418023300 +0200" channel="Rai 5">
+    <title lang="it">INTRO IRON MAIDEN FLIGHT 666</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418023300 +0200" stop="20150418042600 +0200" channel="Rai 5">
+    <title lang="it">Iron Maiden: Flight 666</title>
+    <desc lang="it">A pilotare l'aereo è lo stesso cantante degli Iron Maiden. Passione heavy metal ed energia muscolare a bordo del volo ..</desc>
+    <category lang="it">Documentario</category>
+  </programme>
+  <programme start="20150418042600 +0200" stop="20150418043400 +0200" channel="Rai 5">
+    <title lang="it">MATTHEW E.WHITE</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418043400 +0200" stop="20150418045200 +0200" channel="Rai 5">
+    <title lang="it">BEST OF GHIACCIO BOLLENTE: DAVID CROSBY</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418045200 +0200" stop="20150418054500 +0200" channel="Rai 5">
+    <title lang="it">TESORI DELL\'ANTICO EGITTO</title>
+    <desc lang="it">Rai 5</desc>
+  </programme>
+  <programme start="20150418021000 +0200" stop="20150418041000 +0200" channel="La7D">
+    <title lang="it">Chef Per Un Giorno</title>
+    <desc lang="it">Il docu-reality in cui personaggi noti della televisione si cimentano con larte culinaria. Un personaggio conosciuto si cimenta ai fornelli, ..</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418041000 +0200" stop="20150418050000 +0200" channel="La7D">
+    <title lang="it">I Menu\' Di Benedetta</title>
+    <desc lang="it">La7D</desc>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418051500 +0200" channel="La7D">
+    <title lang="it">Ti Ci Porto Io... In Cucina Con Vissani</title>
+    <desc lang="it">La7D</desc>
+  </programme>
+  <programme start="20150418051500 +0200" stop="20150418053000 +0200" channel="La7D">
+    <title lang="it">Ti Ci Porto Io... In Cucina Con Vissani</title>
+    <desc lang="it">La7D</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418005500 +0200" channel="Real Time">
+    <title lang="it">Malattie misteriose</title>
+    <desc lang="it">8' Stagione Ep.10 - 'La..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418014500 +0200" channel="Real Time">
+    <title lang="it">Malattie imbarazzanti</title>
+    <desc lang="it">6' Stagione Ep.2 - Ancora..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418014500 +0200" stop="20150418024500 +0200" channel="Real Time">
+    <title lang="it">Life Shock</title>
+    <desc lang="it">Ep.7 - Michela Zucca..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418024500 +0200" stop="20150418031000 +0200" channel="Real Time">
+    <title lang="it">Io e le mie mogli</title>
+    <desc lang="it">5' Stagione Ep.3 - 'La..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418031000 +0200" stop="20150418034000 +0200" channel="Real Time">
+    <title lang="it">Io e le mie mogli</title>
+    <desc lang="it">5' Stagione Ep.4 -..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418043000 +0200" channel="Real Time">
+    <title lang="it">24 ore in sala parto</title>
+    <desc lang="it">3' Stagione Ep.7 - Julie..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418043000 +0200" stop="20150418050000 +0200" channel="Real Time">
+    <title lang="it">Non sapevo di essere incinta</title>
+    <desc lang="it">2' Stagione Ep.3 -..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418053000 +0200" channel="Real Time">
+    <title lang="it">Non sapevo di essere incinta</title>
+    <desc lang="it">3' Stagione Ep.3 - 'Bebe'..</desc>
+    <category lang="it">Cultura</category>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418005500 +0200" channel="Deejay TV">
+    <title lang="it">1000 Modi Per Morire</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418015000 +0200" channel="Deejay TV">
+    <title lang="it">Total Wipeout - Pronti A Tutto!</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418015000 +0200" stop="20150418031500 +0200" channel="Deejay TV">
+    <title lang="it">Come E\' Fatto Il Cibo</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418031500 +0200" stop="20150418041000 +0200" channel="Deejay TV">
+    <title lang="it">1000 Modi Per Morire</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418041000 +0200" stop="20150418050500 +0200" channel="Deejay TV">
+    <title lang="it">Alias</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418050500 +0200" stop="20150418053000 +0200" channel="Deejay TV">
+    <title lang="it">Lavori Sporchi</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418003000 +0200" stop="20150418012000 +0200" channel="K2">
+    <title lang="it">La Terra Dopo I Dinosauri</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418012000 +0200" stop="20150418020500 +0200" channel="K2">
+    <title lang="it">Rekkit Rabbit</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418020500 +0200" stop="20150418025500 +0200" channel="K2">
+    <title lang="it">Dofus - I Tesori Di Kerubim</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418025500 +0200" stop="20150418034000 +0200" channel="K2">
+    <title lang="it">Rekkit Rabbit</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418043000 +0200" channel="K2">
+    <title lang="it">Dofus - I Tesori Di Kerubim</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418043000 +0200" stop="20150418051000 +0200" channel="K2">
+    <title lang="it">Strange Hill High: Scuola Da Paura</title>
+    <desc lang="it">K2</desc>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418005500 +0200" channel="Frisbee">
+    <title lang="it">Gatti 101</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418014000 +0200" channel="Frisbee">
+    <title lang="it">Hubert E Takako</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418014000 +0200" stop="20150418022000 +0200" channel="Frisbee">
+    <title lang="it">Space Goofs</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418022000 +0200" stop="20150418030000 +0200" channel="Frisbee">
+    <title lang="it">Sabrina</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418030000 +0200" stop="20150418034500 +0200" channel="Frisbee">
+    <title lang="it">Hubert E Takako</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418034500 +0200" stop="20150418042500 +0200" channel="Frisbee">
+    <title lang="it">Space Goofs</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418042500 +0200" stop="20150418050500 +0200" channel="Frisbee">
+    <title lang="it">Sabrina</title>
+    <desc lang="it">Frisbee</desc>
+  </programme>
+  <programme start="20150418011000 +0200" stop="20150418020000 +0200" channel="Deejay TV +2">
+    <title lang="it">Deejay Chiama Italia</title>
+    <desc lang="it">Linus e Nicola Savino conducono lo show mattutino di Radio Deejay, in onda anche su Deejay Tv</desc>
+    <category lang="it">Intrattenimento</category>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418025500 +0200" channel="Deejay TV +2">
+    <title lang="it">1000 Modi Per Morire</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418025500 +0200" stop="20150418035000 +0200" channel="Deejay TV +2">
+    <title lang="it">Total Wipeout - Pronti A Tutto!</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418035000 +0200" stop="20150418051500 +0200" channel="Deejay TV +2">
+    <title lang="it">Come E\' Fatto Il Cibo</title>
+    <desc lang="it">Deejay TV</desc>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418011000 +0200" channel="Tv 2000">
+    <title lang="it">L\'Ispettore Derrick</title>
+    <desc lang="it">Tv 2000</desc>
+  </programme>
+  <programme start="20150418011000 +0200" stop="20150418013300 +0200" channel="Tv 2000">
+    <title lang="it">Effetto Notte</title>
+    <desc lang="it">Tv 2000</desc>
+  </programme>
+  <programme start="20150418013300 +0200" stop="20150418033300 +0200" channel="Tv 2000">
+    <title lang="it">Siamo Noi</title>
+    <desc lang="it">Tv 2000</desc>
+  </programme>
+  <programme start="20150418033300 +0200" stop="20150418050000 +0200" channel="Tv 2000">
+    <title lang="it">Documentario</title>
+    <desc lang="it">Tv 2000</desc>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418053000 +0200" channel="Tv 2000">
+    <title lang="it">Rosario Da Lourdes In Differita</title>
+    <desc lang="it">Tv 2000</desc>
+  </programme>
+  <programme start="20150418004000 +0200" stop="20150418004500 +0200" channel="Rai Premium">
+    <title lang="it">Rai News - Notte</title>
+    <desc lang="it">Rai Premium</desc>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418022000 +0200" channel="Rai Premium">
+    <title lang="it">La Nave dei Sogni - Viaggio di nozze in Croazia</title>
+    <desc lang="it">Rai Premium</desc>
+  </programme>
+  <programme start="20150418022000 +0200" stop="20150418025000 +0200" channel="Rai Premium">
+    <title lang="it">GranPremium</title>
+    <desc lang="it">Rai Premium</desc>
+  </programme>
+  <programme start="20150418025000 +0200" stop="20150418034000 +0200" channel="Rai Premium">
+    <title lang="it">Vento di Ponente</title>
+    <desc lang="it">Sullo sfondo dei cantieri navali di Genova, due famiglie di armatori, i Ghiglione e i De Caro, con le loro ..</desc>
+    <category lang="it">Fiction</category>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418052000 +0200" channel="Rai Premium">
+    <title lang="it">La Squadra 3</title>
+    <desc lang="it">Rai Premium</desc>
+  </programme>
+  <programme start="20150418052000 +0200" stop="20150418054500 +0200" channel="Rai Premium">
+    <title lang="it">Sottocasa</title>
+    <desc lang="it">Rai Premium</desc>
+  </programme>
+  <programme start="20150418000500 +0200" stop="20150418001000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 12</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418001500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 13</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418001500 +0200" stop="20150418002000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 14</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418002000 +0200" stop="20150418002500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 15</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418002500 +0200" stop="20150418003500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 16</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418003500 +0200" stop="20150418004000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA CASA DELLE API (THE HIVE) - EP. 1</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418004000 +0200" stop="20150418005000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA CASA DELLE API (THE HIVE) - EP. 2</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418005000 +0200" stop="20150418005500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA CASA DELLE API (THE HIVE) - EP. 3</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418010500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA CASA DELLE API (THE HIVE) - EP. 4</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418010500 +0200" stop="20150418011000 +0200" channel="Rai Yoyo">
+    <title lang="it">SIGLA BUONANOTTE</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418011000 +0200" stop="20150418013500 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 8 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418013500 +0200" stop="20150418020000 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 9 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418022000 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 8 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418022000 +0200" stop="20150418024500 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 9 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418024500 +0200" stop="20150418025000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 12</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418025000 +0200" stop="20150418025500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 13</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418025500 +0200" stop="20150418030000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA PIMPA III - EP. 14</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418030000 +0200" stop="20150418031500 +0200" channel="Rai Yoyo">
+    <title lang="it">LA POSTA DI YOYO 2014/2015 - EP. 73</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418031500 +0200" stop="20150418033000 +0200" channel="Rai Yoyo">
+    <title lang="it">LA POSTA DI YOYO 2014/2015 - EP. 74</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418033000 +0200" stop="20150418034500 +0200" channel="Rai Yoyo">
+    <title lang="it">ALBERO AZZURRO 2014/15 (L\' ALBERO AZZURRO) - EP. 19</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418034500 +0200" stop="20150418040000 +0200" channel="Rai Yoyo">
+    <title lang="it">ALBERO AZZURRO 2014/15 (L\' ALBERO AZZURRO) - EP. 20</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418040000 +0200" stop="20150418041500 +0200" channel="Rai Yoyo">
+    <title lang="it">BUONANOTTE CON LE FAVOLE DI YOYO 2014-15 - EP. 37</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418041500 +0200" stop="20150418044000 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 8 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418044000 +0200" stop="20150418050500 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 9 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418050500 +0200" stop="20150418052500 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 8 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418052500 +0200" stop="20150418055000 +0200" channel="Rai Yoyo">
+    <title lang="it">TELETUBBIES 9 - EP. 22</title>
+    <desc lang="it">Rai Yoyo</desc>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418003500 +0200" channel="Rai Gulp">
+    <title lang="it">MIA AND ME (II) - EP. 12</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418003500 +0200" stop="20150418005000 +0200" channel="Rai Gulp">
+    <title lang="it">GULP ODEON PRIMAVERA 2015 - EP. 13</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418005000 +0200" stop="20150418011500 +0200" channel="Rai Gulp">
+    <title lang="it">GULP GIRL 2014/2015 - EP. 124</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418014000 +0200" channel="Rai Gulp">
+    <title lang="it">KUNG FU PANDA (III) - EP. 7</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418014000 +0200" stop="20150418020000 +0200" channel="Rai Gulp">
+    <title lang="it">KUNG FU PANDA (III) - EP. 8</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418022500 +0200" channel="Rai Gulp">
+    <title lang="it">LE NUOVE AVVENTURE DI PETER PAN - EP. 5</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418022500 +0200" stop="20150418025000 +0200" channel="Rai Gulp">
+    <title lang="it">LE NUOVE AVVENTURE DI PETER PAN - EP. 6</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418025000 +0200" stop="20150418031000 +0200" channel="Rai Gulp">
+    <title lang="it">KUNG FU PANDA (III) - EP. 7</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418031000 +0200" stop="20150418034000 +0200" channel="Rai Gulp">
+    <title lang="it">KUNG FU PANDA (III) - EP. 8</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418035000 +0200" channel="Rai Gulp">
+    <title lang="it">MINI NINJAS - EP. 23</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418035000 +0200" stop="20150418040000 +0200" channel="Rai Gulp">
+    <title lang="it">MINI NINJAS - EP. 24</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418040000 +0200" stop="20150418041500 +0200" channel="Rai Gulp">
+    <title lang="it">MINI NINJAS - EP. 25</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418041500 +0200" stop="20150418042500 +0200" channel="Rai Gulp">
+    <title lang="it">MINI NINJAS - EP. 26</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418042500 +0200" stop="20150418045000 +0200" channel="Rai Gulp">
+    <title lang="it">LE NUOVE AVVENTURE DI PETER PAN - EP. 11</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418045000 +0200" stop="20150418051500 +0200" channel="Rai Gulp">
+    <title lang="it">LE NUOVE AVVENTURE DI PETER PAN - EP. 12</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418051500 +0200" stop="20150418053500 +0200" channel="Rai Gulp">
+    <title lang="it">MIA AND ME - EP. 19</title>
+    <desc lang="it">Rai Gulp</desc>
+  </programme>
+  <programme start="20150418000700 +0200" stop="20150418002600 +0200" channel="Rai Storia">
+    <title lang="it">Il giorno e la storia</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418002600 +0200" stop="20150418003000 +0200" channel="Rai Storia">
+    <title lang="it">Anniversari-Il mio 25 Aprile p.21</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418003000 +0200" stop="20150418003400 +0200" channel="Rai Storia">
+    <title lang="it">Notiziario-RaiNews24</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418003400 +0200" stop="20150418005000 +0200" channel="Rai Storia">
+    <title lang="it">Come eravamo - Giovani Res Giovani</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418005000 +0200" stop="20150418014400 +0200" channel="Rai Storia">
+    <title lang="it">La storia sotto inchiesta:L\'affare Crabb</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418014400 +0200" stop="20150418022700 +0200" channel="Rai Storia">
+    <title lang="it">Mille papaveri rossi</title>
+    <desc lang="it">Documenti e cronache di cose viste e vissute dai diretti protagonisti dell epoca, un programma di Gianni Bisiach (19 78)</desc>
+    <category lang="it">Documentario</category>
+  </programme>
+  <programme start="20150418022700 +0200" stop="20150418024200 +0200" channel="Rai Storia">
+    <title lang="it">R.A.M. Qui Radio Bari</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418024200 +0200" stop="20150418033200 +0200" channel="Rai Storia">
+    <title lang="it">Italia viaggio nella bellezza:la leggenda aurea di Galamna</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418033200 +0200" stop="20150418034000 +0200" channel="Rai Storia">
+    <title lang="it">Come eravamo - Giovani Res Giovani</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418043200 +0200" channel="Rai Storia">
+    <title lang="it">Speciale Crash-I luoghi e la storia -Chiusure</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418043200 +0200" stop="20150418045800 +0200" channel="Rai Storia">
+    <title lang="it">Parlare,leggere e scrivere p.5</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418045800 +0200" stop="20150418055100 +0200" channel="Rai Storia">
+    <title lang="it">La Straordinaria Storia d\' Italia</title>
+    <desc lang="it">Rai Storia</desc>
+  </programme>
+  <programme start="20150418002500 +0200" stop="20150418004000 +0200" channel="Rai Sport 1">
+    <title lang="it">TG Sport</title>
+    <desc lang="it">Rai Sport 1</desc>
+  </programme>
+  <programme start="20150418004000 +0200" stop="20150418021000 +0200" channel="Rai Sport 1">
+    <title lang="it">Pugilato: Titolo Italiano Pesi Super Gallo Salvini Vs Crudetti</title>
+    <desc lang="it">Rai Sport 1</desc>
+  </programme>
+  <programme start="20150418021000 +0200" stop="20150418034500 +0200" channel="Rai Sport 1">
+    <title lang="it">Canottaggio: Memorial D\'Aloja</title>
+    <desc lang="it">Rai Sport 1</desc>
+  </programme>
+  <programme start="20150418034500 +0200" stop="20150418052500 +0200" channel="Rai Sport 1">
+    <title lang="it">Calcio : C.to Italiano Lega Pro Real Vicenza - Bassano</title>
+    <desc lang="it">Rai Sport 1</desc>
+  </programme>
+  <programme start="20150418010000 +0200" stop="20150418020000 +0200" channel="Rai Sport 2">
+    <title lang="it">Ti ricordo ancora</title>
+    <desc lang="it">Rai Sport 2</desc>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418021500 +0200" channel="Rai Sport 2">
+    <title lang="it">Perle di Sport</title>
+    <desc lang="it">Rai Sport 2</desc>
+  </programme>
+  <programme start="20150418021500 +0200" stop="20150418040000 +0200" channel="Rai Sport 2">
+    <title lang="it">Calcio: Campionato Italiano Serie A 2014/2015 29a giornata: Inter - Parma</title>
+    <desc lang="it">Rai Sport 2</desc>
+  </programme>
+  <programme start="20150418040000 +0200" stop="20150418053000 +0200" channel="Rai Sport 2">
+    <title lang="it">Pallavolo Maschile: Camp. Italiano 2014/15 QdF - gara 1: Trento - Molfetta</title>
+    <desc lang="it">Rai Sport 2</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418001000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418001000 +0200" stop="20150418001500 +0200" channel="Rai News">
+    <title lang="it">Minirassegna Web</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418001500 +0200" stop="20150418003000 +0200" channel="Rai News">
+    <title lang="it">Magazine Tematico Di Rainews</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418003000 +0200" stop="20150418004000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418004000 +0200" stop="20150418004500 +0200" channel="Rai News">
+    <title lang="it">Scenari Globali</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418010000 +0200" channel="Rai News">
+    <title lang="it">Italia, Istruzioni Per L\'Uso</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418010000 +0200" stop="20150418011500 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418013000 +0200" channel="Rai News">
+    <title lang="it">Rassegna Stampa Italiana</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418013000 +0200" stop="20150418020000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418021000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418021000 +0200" stop="20150418021500 +0200" channel="Rai News">
+    <title lang="it">Minirassegna Web</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418021500 +0200" stop="20150418023000 +0200" channel="Rai News">
+    <title lang="it">Magazine Tematico Di Rainews</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418023000 +0200" stop="20150418024000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418024000 +0200" stop="20150418024500 +0200" channel="Rai News">
+    <title lang="it">Scenari Globali</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418024500 +0200" stop="20150418030000 +0200" channel="Rai News">
+    <title lang="it">Italia, Istruzioni Per L\'Uso</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418030000 +0200" stop="20150418031500 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418031500 +0200" stop="20150418033000 +0200" channel="Rai News">
+    <title lang="it">Rassegna Stampa Italiana</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418033000 +0200" stop="20150418040000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418040000 +0200" stop="20150418041000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418041000 +0200" stop="20150418041500 +0200" channel="Rai News">
+    <title lang="it">Minirassegna Web</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418041500 +0200" stop="20150418043000 +0200" channel="Rai News">
+    <title lang="it">Magazine Tematico Di Rainews</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418043000 +0200" stop="20150418044000 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418044000 +0200" stop="20150418044500 +0200" channel="Rai News">
+    <title lang="it">Scenari Globali</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418044500 +0200" stop="20150418050000 +0200" channel="Rai News">
+    <title lang="it">Italia, Istruzioni Per L\'Uso</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418051500 +0200" channel="Rai News">
+    <title lang="it">News Meteo Traffico</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418051500 +0200" stop="20150418053000 +0200" channel="Rai News">
+    <title lang="it">Rassegna Stampa Italiana</title>
+    <desc lang="it">Rai News</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418010000 +0200" channel="QVC">
+    <title lang="it">Aria Di Primavera</title>
+    <desc lang="it">QVC</desc>
+  </programme>
+  <programme start="20150418000500 +0200" stop="20150418005500 +0200" channel="Poker Italia 24">
+    <title lang="it">Aussie Millions 2012</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418005500 +0200" stop="20150418014500 +0200" channel="Poker Italia 24">
+    <title lang="it">World Series Of Poker 2012</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418014500 +0200" stop="20150418023000 +0200" channel="Poker Italia 24">
+    <title lang="it">Ept Anthology</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418023000 +0200" stop="20150418032000 +0200" channel="Poker Italia 24">
+    <title lang="it">Premier League Poker</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418032000 +0200" stop="20150418041000 +0200" channel="Poker Italia 24">
+    <title lang="it">Assi Nostri</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418041000 +0200" stop="20150418045000 +0200" channel="Poker Italia 24">
+    <title lang="it">Pokerclub Live</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418045000 +0200" stop="20150418050000 +0200" channel="Poker Italia 24">
+    <title lang="it">Come Giochi?</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418050000 +0200" stop="20150418054500 +0200" channel="Poker Italia 24">
+    <title lang="it">World Poker Tour</title>
+    <desc lang="it">Poker Italia 24</desc>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418020000 +0200" channel="MTV Music">
+    <title lang="it">2015 MTV Movie Awards</title>
+    <desc lang="it">Pronti con i popcorn?..</desc>
+    <category lang="it">Musica</category>
+  </programme>
+  <programme start="20150418020000 +0200" stop="20150418025000 +0200" channel="MTV Music">
+    <title lang="it">Top 10</title>
+    <desc lang="it">Hip Hop R&amp;B - Una Top 10..</desc>
+    <category lang="it">Musica</category>
+  </programme>
+  <programme start="20150418025000 +0200" stop="20150418034000 +0200" channel="MTV Music">
+    <title lang="it">Top 10</title>
+    <desc lang="it">Dance - Una Top 10 con i..</desc>
+    <category lang="it">Musica</category>
+  </programme>
+  <programme start="20150418034000 +0200" stop="20150418043000 +0200" channel="MTV Music">
+    <title lang="it">Top 10</title>
+    <desc lang="it">Hits - Una Top 10 con i..</desc>
+    <category lang="it">Musica</category>
+  </programme>
+  <programme start="20150418043000 +0200" stop="20150418052000 +0200" channel="MTV Music">
+    <title lang="it">Top 10</title>
+    <desc lang="it">Italians - Una Top 10 con..</desc>
+    <category lang="it">Musica</category>
+  </programme>
+  <programme start="20150418000000 +0200" stop="20150418003000 +0200" channel="Super tennis">
+    <title lang="it">Ball Boys</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418003000 +0200" stop="20150418004500 +0200" channel="Super tennis">
+    <title lang="it">Doppio Italia vs Francia,Fed Cup 2015</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418004500 +0200" stop="20150418011500 +0200" channel="Super tennis">
+    <title lang="it">Ball Boys</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418011500 +0200" stop="20150418023000 +0200" channel="Super tennis">
+    <title lang="it">Doppio Italia vs Francia,Fed Cup 2015</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418023000 +0200" stop="20150418023000 +0200" channel="Super tennis">
+    <title lang="it">Magazine ATP</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418023000 +0200" stop="20150418044500 +0200" channel="Super tennis">
+    <title lang="it">ATP 250 Houston Finale</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+  <programme start="20150418044500 +0200" stop="20150418050000 +0200" channel="Super tennis">
+    <title lang="it">Tie-Break</title>
+    <desc lang="it">Super tennis</desc>
+  </programme>
+</tv>

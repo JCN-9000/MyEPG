@@ -1,0 +1,68 @@
+Howto configure Combi-Channels:
+revision for WG++ version 1.0.2 Beta
+(Nederlandse versie aan het eind)
+
+Some Satellite- and Cable TV providers combine several channels in one. Like, in a certain period of the day Channel A and for the rest of the day Channel B. Or , Channel A but moving to Channel B on certain events (like live Sports happening on Channel B)
+
+WebGrab+Plus supports the composition of the EPG for such channels by merging EPG data of different channels for certain periods of the day and by filtering for the events with a title filter.
+ 
+The setup for such channels is done in the channel-list of the config file (WebGrab++.config.xml), using the attributes 'period' 'include' and 'exclude'. One entry for each fragment.
+
+It is also possible to add a reference to the source channel of the fragment at the end of the description. This reference has the format (site_channel/site), like (SBS6/tvgids.nl). For this to work one need to specify the attribute 'site_channel' in the channel entry. Without this attribute the reference will be just (site).
+
+Example: 
+
+  <channel update="i" site="tvgids.nl" site_id="40" site_channel="AT5" xmltv_id="CombiChannel_Id" period="00:00-06:00" >CombiChannel_Name</channel>
+  <channel update="i" site="gids.publiekeomroep.nl" site_id="67" site_channel="RTL8" xmltv_id="CombiChannel_Id" period="06:00-24:00" >CombiChannel_Name</channel>
+  <channel update="i" site="tvgids.upc.nl" site_id="Ered.+live+2" site_channel="EredivisieLive2" xmltv_id="CombiChannel_Id" exclude="Eredivisie Live Tekst TV">CombiChannel_Name</channel>
+  
+This example creates an EPG listing for the CombiChannel with:
+ -- the programs of channel '40' = AT5 from site 'tvgids.nl' between 00:00 and 06:00 and 
+ -- the programs of channel '67' = RTL8  from site 'gids.publiekeomroep.nl' for the rest of the day, 
+ provided the title of the programs on channel 'Ered.+live+2' do not contain the text 'Eredivisie Live Tekst TV' . In that case the programs of that channel are inserted in the EPG.
+ 
+The entries of the combi-channel fragments in the channel-list must be kept together (not mixed with other channel entries). Also the period specification cannot be negative. (suppose the desired period are from 20:00-06:00 channel A and from 06:00-20:00 channel B, then, because the first is a negatieve period, it must be specified in three fractions : channel A period="00:00-06:00", channel B period="06:00-20:00" and channel A  period="20:00-24:00") 
+
+WebGrab+Plus grabs and applies the attributes (period/exclude/include) of the Combi-Channel fragments in the well known 'incremental' way. That causes the 'next' fragment to update the previous, consequently the order in which the fragments occur in the channel-list is important.
+
+The incremental update process is slightly different for combi-channels (compared to it for normal channels) in that overlapping programs from the different fragments are 'truncated' on the period and title filter transitions.
+(rather than removed).
+
+--------------Nederlandse Tekst--------------------
+
+Combikanalen:
+
+Om deze te maken kun je gebruik maken van een aantal nieuwe attributen van de kanaal lijst in de config file :
+ 
+---Attribuut 'period'. Hiermee bepaal je de periode waarvoor de epg van dat kanaal wordt gedownload. Bv:
+
+zonder period attribuut (normaal):
+<channel update="i" site="tvgids.nl" site_id="1" xmltv_id="NED1">NED1</channel>
+
+zelfde kanaal met period (download alleen tussen 17:00 en 23:30):
+<channel update="i" site="tvgids.nl" site_id="1" xmltv_id="NED1" period="17:00-23:30">NED1</channel>
+
+---Attributen 'exclude' en 'include'. Hiermee kun je programma's, waarvan de title bepaalde woorden bevatten, niet of juist alleen wel grabben. Bv:
+
+<channel update="i" site="tvgids.upc.nl" site_id="Ered.+live+2" xmltv_id="EredivisieLive2" exclude="Eredivisie Live Tekst TV">Eredivisie live2</channel> 
+
+Hierdoor worden van het kanaal EreDivisieLive2 alleen programma's gedownload waarvan in de title niet de text 'Eredivisie Live Tekst TV' voorkomt.
+
+
+Een combi kanaal maak je door een zo'n kanaal, een aantal malen, met een andere site_id (= het echte kanaal waarvan de gids voor die periode in het combi kanaal terecht komt), in de kanaal lijst op te geven en met de twee boven genoemde attributen te selecteren wat er in het combi kanaal terecht komt.
+
+Ook wordt er een verwijzing naar het 'echte' kanaal aan het eind van de description van het programma toegevoegd. Dit in de volgende vorm : (site_channel/site)  bv (SBS6/tvgids.nl). Om dit te krijgen moet een extra attribuut 'site_channel' aan de kanaal specificatie worden toegevoegd. Dit attribuut is dus een indicatie van de kanaal naam in de betreffende site, ieder waarde is ok zolang het maar duidelijk is voor de gebruiker. Zonder attribuut 'site_channel' wordt alleen de (site) aan het einde van de description toegevoegd.
+
+<channel update="i" site="tvgids.nl" site_id="40" site_channel="AT5" xmltv_id="CombiChan1" period="00:00-06:00">Combi 1</channel> 
+<channel update="i" site="tvgids.nl" site_id="21" site_channel="Cartoon" xmltv_id="CombiChan1" period="06:00-24:00">Combi 1</channel>
+<channel update="i" site="tvgids.upc.nl" site_id="Ered.+live+2" site_channel="EreDivisieLive2" xmltv_id="CombiChan1" exclude="Eredivisie Live Tekst TV">Combi 1</channel> 
+
+Dit voorbeeld maakt een gids voor CombiChan1 met de programma's van AT5 tot 06:00 en van Cartoon Network voor de rest van de dag, onderbroken door de programma's van Eredivisie Live 2 als dat niet het programma "Eredivisie Live Tekst TV"uitzendt.
+
+De onderdelen in de kanaal lijst waaruit een combi kanaal is opgebouwd moeten bijelkaar in een groepje zoals hierboven worden opgegeven in de kanaal lijst. Er mag dus geen ander kanaal tussen geplaatst worden! Verder mag een period attribuut niet negatief zijn. (stel de gewenste epg fragmenten zijn van 20:00-06:00 kanaal A en van 06:00-20:00 kanaal B, dan moet dat in drie fragmenten worden gespecificeerd ; kanaal A period="00:00-06:00", kanaal B period="06:00-20:00, en weer kanaal A period="20:00-24:00" omdat de eerst periode negatief is).
+De volgorde is ook belangrijk want ieder volgende 'update incrementeel' de vorige. Elkaar overlappende programma's worden ingekort met een 'warning' in de description.
+
+Het is toegestaan de periodes te laten overlappen. Omdat het update proces incrementeel verloopt zal dan de laatst opgegeven period de eerder opgegeven 'incrementeel' overschrijven.
+ 
+
+

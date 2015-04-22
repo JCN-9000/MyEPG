@@ -1,0 +1,17 @@
+Configuring WebGrab+Plus:
+
+Installing WebGrab+Plus will place all resource-files (config, ini, txt and ico) to C:\ProgramData\ServerCare\WebGrab. This is the programs home working folder. This is also the place were the xmltv outputfile (guide.xml) and the log file will be put. The place of the xmltv file can be changed to suit your needs in the configfile (C:\ProgramData\ServerCare\WebGrab\WebGrab++.config.xml)
+Directly after the installation a test run is started. It uses the configfile which comes with the distribution that will grab 1 day of epg data from a few available sites in incremental mode. You can interrupt this any time without any consequence for files and settings.
+
+Adapt the config settings to suit your own needs, the file is self explanatary. The most important is to add /change the list of channels for which epg data is grabbed. Read and follow the instructions in the configfile to do that. The most important is to specify the correct <site> attribute value. For each site listed there a corresponding siteini file must be available, eg if the <site> value is laguiatv.com a siteini file laguiatv.com.ini must be available in the program working folder. Every channel can have a different <site> value, allowing to grab epg data from different sites in one run. (This is demonstrated in the config file that is used for the test run). The next important value in the channel list is the <site_id> attribute. This must be equal to the channel identification in the corresponding site. 
+For nearly all sites a channel list file (like tvgids.nl.channels.xml) is available in the SiteIni.Pack. 
+The most easy way to add channels to your config file is to copy the ones you want from this channel list file into the config file, and to delete the ones you don't need.
+
+Another setting you might want to change is the number of days , e.g. <timespan>6</timespan> gives you a week of epg. Also check the other available settings.
+
+If no siteini file is available for a certain site it must be created. You can either try to make one yourself with the help of the Documentation.Vx.x.x.pdf file or contact me at <jan_van_straaten@outlook.com>  or leave a message in http://www.webgrabplus.com/forums/usage.
+ 
+Any comments /problems /wishes to the same address are welcome.
+
+
+good luck      Jan van Straaten

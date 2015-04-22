@@ -1,0 +1,40 @@
+Handleiding voor het maken van een siteini file:
+
+1. start met de site-ini-template.ini Rename een kopie bv myfirstsite.ini oid
+
+2. alle elementen zijn standaard disabled (=* ervoor)
+
+3. enable site( alleen de eerste is voorlopig genoeg), url_index, urldate, index_start en index_title (* weg)
+
+4. geef zo goed mogelijke waarden in de 'site' regel
+
+5. probeer er achter te komen hoe de url van een index page moet zijn, vooral ook hoe en waar de datum wordt aangegeven en hoe en waar het kanaal staat.
+
+6. bepaal de urldate.format ahv de datum waarden in de url (zie voorbeelden in de documentatie)
+
+7. maak de url_index scrubstring en voeg debug toe. ... url_index {url(debug)|.. rest van de spec ...}
+
+8. geef één kanaal in de config met site=myfirstsite en update=f  . Denk aan de juiste site_id,  (= kanaal aanduiding in de url_index!) Zet timespan=0
+
+9. run WG++
+
+10. als er niks fout gaat en je waarden voor de url_index zijn ok dan wordt je eerste indexpage gegrabt. Je zult in de logfile de gegenereerde url vinden. Die kun je bv in je browser nog eens checken. Verder wordt de html source van de page in de file  html.source.htm weggeschreven. 
+
+11. Aangenomen dat je de indexpage te pakken hebt, probeer het ook met timespan=1 enz
+
+12. Je moet nu de index page splitsen in de programma blokjes. Je vind die meestal door de title of de starttijd in de page op te sporen. Als je het principe van scrubstring hebt begrepen met bs, es, ee, be en het verschil tussen single en multi dan moet het te doen zijn om  index_showsplit in te vullen. Voeg weer debug toe zodat je in de log kunt zien wat er gebeurt.
+
+13. Als je zover bent is de volgende stap index_start en index_title. Om achter de scrubstrings te komen gebruik je de html.source.htm van de laatste run (de debug in de showsplit creeert een html.source van de laatste programma blokje uit de index page.
+
+14. Als dat lukt zul je de eerste xmltv file gemaakt hebben met de tijden en een title
+
+15. De volgende is de index_urlshow. Dat is de url van de show details. Die url wordt pas aangeroepen als er op z'n minst één element zonder het index_ voorvoegsel enabled is, dus enable title.scrub (er hoeven nog geen waarden in)
+
+
+
+16. Dan title
+
+17. en alle andere elementen die je wilt scrubben
+
+18. enz enz
+

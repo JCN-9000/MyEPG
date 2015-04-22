@@ -1,0 +1,46 @@
+How to make a siteini file,
+A brief guide:
+
+1. start with the site-ini-template.ini  Rename a copy of it, eg myfirstsite.ini
+
+2. all elements are disabled as default (* at the beginning of the line)
+
+3. enable site (only the first one for now), url_index, urldate, index_showsplit, index_start and index_title
+
+4. fill out the values of the 'site' line as far as you can figure them out (read 4.3 of the documentation)
+
+5. figure out the url of the index page (the webpage that lists the shows of a channel in chronological order). Most sites have such an url containing a channel and a date value.
+
+6. determine the urldate format. (see 4.4.2.1 of the documentation)
+
+7. compose the url_index scrubstring (see 4.4.2 of the documentation), add the (debug) argument.
+
+8. enter one channel specification in the config file , site=myfirstsite and update="f" , site_id="channel name in url_index". Enter <timespan>0</timespan>
+
+9. run WG++
+
+10. If all is correct, the program grabs the index page of 'today'. You will find the generated url in the logfile due to the addition of the debug argument. Copy this url and load it in your browser to check if the correct index page is addressed.
+
+11. try also with <timespan>1</timespan>
+
+12. The next step is to split the index page into individual shows. This is done with the scrubstring index_showsplit. For this you need to understand the basics of the element separators bs, es, ee, be and the difference between 'single' and 'multi'. Read chapter 4.2 of the documentation and also 4.5.1 for more details about scrubstring index_showsplit.
+Again add the debug argument. Run WG++ and check the result in the logfile and a file htlml.source.htm which is created and contains the index page before splitting. If you are happy with the result it is better to remove the debug argument from the index_showsplit scrubstring to keep the logfile as small as possible for further steps.
+
+13. The next step is to scrub index_start and index_title from the individual shows resulting from step 12. These are the two elements which are needed as a minimum to create a xmltv output file. As usual add the debug argument to facilitate the design of the proper scrubstrings.
+
+14. You should see your first xmltv output file with the minimal times/title content.
+
+15. Most sites have more details on a separate showdetail page. To grab it you need to figure out the url for it and construct the index_urlshow scrubstring. To test it you need to enable at least one scrubstring (even when still 'empty') without the index_ prefix. Like title.scrub . Check with the help of debug if the proper showdetail page is grabbed. 
+
+16. Select a show with interesting details you want to use to design the detail scrubstrings. (An easy way to do that is in the browser). Set the <timespan> to switch to 'one show only' mode. Read the text in the config file how to do that.
+
+17. Design the show detail scrubstrings for all the data you want to add in your epge and which is available in the showdetail page.
+
+18. You will probably need to use operations to get the results  you want. Read chapter 4.6 of the documentation.
+
+19. You can always contact me or other expert users in the forum http://www.webgrabplus.com/forums/ini-files
+
+20. don't forget to share the result with other users through uploading it in the forum. 
+
+Success !!     Jan van Straaten
+
